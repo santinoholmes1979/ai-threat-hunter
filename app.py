@@ -64,6 +64,23 @@ raw_df = safe_read_csv(RAW_LOG_FILE)
 norm_df = safe_read_csv(NORMALIZED_LOG_FILE)
 alerts_df = safe_read_csv(ALERTS_FILE)
 
+st.divider()
+st.subheader("Investigation Filters")
+
+if not alerts_df.empty:
+
+    severity_options = ["All"] + sorted(alerts_df["severity"].dropna().unique().tolist())
+    selected_severity = st.selectbox("Filter by Severity", severity_options)
+
+    host_options = ["All"] + sorted(alerts_df["host"].dropna().unique().tolist())
+    selected_host = st.selectbox("Filter by Host", host_options)
+
+    if selected_severity != "All":
+        alerts_df = alerts_df[alerts_df["severity"] == selected_severity]
+
+    if selected_host != "All":
+        alerts_df = alerts_df[alerts_df["host"] == selected_host]
+
 left, right = st.columns([2, 1])
 
 with left:
@@ -85,6 +102,16 @@ with left:
         ]
         display_columns = [col for col in preferred_columns if col in alerts_df.columns]
         st.dataframe(alerts_df[display_columns], use_container_width=True)
+        st.subheader("Alert Investigation")
+
+        selected_alert = st.selectbox(
+            "Select Alert to Investigate",
+            alerts_df.index
+        )
+
+        alert_details = alerts_df.loc[selected_alert]
+
+        st.json(alert_details.to_dict())
 
 with right:
     st.subheader("AI Analyst Summary")
