@@ -8,6 +8,10 @@
 
 ![Alerts Table](screenshots/alerts_table_summary.png)
 
+## Investigation Workflow
+
+![Investigation](screenshots/investigation_view.png)
+
 AI Threat Hunter is a Python and Streamlit cybersecurity portfolio project that simulates endpoint and authentication telemetry, normalizes event data, executes hunt-driven detection logic, and generates analyst-friendly findings.
 
 
