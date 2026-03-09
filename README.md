@@ -1,6 +1,12 @@
 \# AI Threat Hunter
 
+## Dashboard Preview
 
+![Main Dashboard](screenshots/main_dashboard.png)
+
+## Alerts and Analyst Summary
+
+![Alerts Table](screenshots/alerts_table_summary.png)
 
 AI Threat Hunter is a Python and Streamlit cybersecurity portfolio project that simulates endpoint and authentication telemetry, normalizes event data, executes hunt-driven detection logic, and generates analyst-friendly findings.
 
@@ -51,7 +57,6 @@ This project demonstrates how a threat hunter or SOC analyst can move from raw t
 \- AI-style analyst summary
 
 \- Streamlit dashboard for investigation
-
 
 
 \## Project Structure
