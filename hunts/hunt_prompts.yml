@@ -1,0 +1,43 @@
+hunts:
+  - name: Suspicious PowerShell Activity
+    description: Find PowerShell executions that appear encoded, hidden, or unusually long.
+    keywords:
+      - powershell
+      - encodedcommand
+      - hidden
+      - bypass
+      - frombase64string
+
+  - name: Password Spray Indicators
+    description: Find repeated failed logons from one source against many users.
+    keywords:
+      - failed logon
+      - password spray
+      - authentication failure
+      - invalid password
+
+  - name: Persistence via Run Keys
+    description: Find suspicious registry run key changes associated with persistence.
+    keywords:
+      - run key
+      - registry
+      - persistence
+      - currentversion\run
+
+  - name: Office Spawned Script Interpreter
+    description: Detect Office products spawning PowerShell or command shells.
+    keywords:
+      - winword.exe
+      - excel.exe
+      - outlook.exe
+      - cmd.exe
+      - powershell.exe
+
+  - name: Suspicious Lateral Movement
+    description: Look for remote execution and administrative share access patterns.
+    keywords:
+      - psexec
+      - wmiexec
+      - remote service
+      - admin$
+      - smb
