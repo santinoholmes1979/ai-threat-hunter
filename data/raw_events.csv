@@ -1,308 +1,308 @@
 timestamp,event_type,user,host,source_ip,parent_process,process_name,command_line,target_user,registry_path,destination_ip,destination_port,status
-2026-03-09T01:14:21.204696,network_connection,bob,WS-1003,10.0.1.10,winword.exe,rundll32.exe,notepad.exe notes.txt,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,139,failure
-2026-03-09T01:15:21.204696,auth_failure,frank,WS-1002,10.0.1.10,outlook.exe,rundll32.exe,cmd.exe /c dir,charlie,,10.0.1.10,445,success
-2026-03-09T01:20:21.204696,process_start,grace,DC-01,192.168.1.20,outlook.exe,powershell.exe,wmic process call create powershell.exe,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,success
-2026-03-09T01:20:21.204696,registry_change,grace,WS-1003,192.168.1.20,services.exe,cmd.exe,powershell.exe Get-Process,frank,,192.168.1.20,135,failure
-2026-03-09T01:22:21.204696,auth_failure,charlie,DC-01,192.168.1.20,cmd.exe,reg.exe,cmd.exe /c dir,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,443,failure
-2026-03-09T01:24:21.204696,auth_failure,grace,DC-01,192.168.1.20,explorer.exe,cmd.exe,reg.exe query HKLM\Software,frank,,10.0.0.15,139,success
-2026-03-09T01:24:21.204696,process_start,david,DC-01,10.0.5.55,services.exe,notepad.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,success
-2026-03-09T01:25:21.204696,process_start,bob,DC-01,10.0.0.15,services.exe,reg.exe,powershell.exe Get-Process,david,,192.168.1.20,3389,failure
-2026-03-09T01:26:21.204696,process_start,eve,DC-01,10.0.0.22,excel.exe,rundll32.exe,cmd.exe /c dir,david,,10.0.0.15,135,success
-2026-03-09T01:26:21.204696,auth_failure,frank,WS-1001,10.0.0.15,services.exe,cmd.exe,wmic cpu get name,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,3389,failure
-2026-03-09T01:27:21.204696,process_start,david,WS-1003,192.168.1.20,winword.exe,rundll32.exe,wmic cpu get name,bob,,192.168.1.20,443,failure
-2026-03-09T01:30:21.204696,process_start,alice,ENG-2201,10.0.5.55,explorer.exe,powershell.exe,cmd.exe /c dir,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,80,failure
-2026-03-09T01:31:21.204696,process_start,bob,ENG-2201,10.0.0.22,outlook.exe,cmd.exe,powershell.exe -EncodedCommand SQBFAFgA,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,success
-2026-03-09T01:32:21.204696,process_start,david,WS-1002,10.0.0.22,cmd.exe,reg.exe,notepad.exe notes.txt,bob,,10.0.1.10,443,success
-2026-03-09T01:35:21.204696,auth_success,david,DC-01,10.0.0.15,services.exe,notepad.exe,powershell.exe Get-Process,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,80,success
-2026-03-09T01:36:21.204696,process_start,eve,WS-1001,10.0.0.22,cmd.exe,cmd.exe,cmd.exe /c dir,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,443,success
-2026-03-09T01:37:21.204696,registry_change,grace,WS-1002,10.0.1.10,services.exe,wmic.exe,powershell.exe Get-Process,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,success
-2026-03-09T01:38:21.204696,process_start,bob,ENG-2201,10.0.0.15,excel.exe,cmd.exe,notepad.exe notes.txt,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,3389,failure
-2026-03-09T01:45:21.204696,process_start,david,DC-01,10.0.0.22,services.exe,cmd.exe,notepad.exe notes.txt,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,failure
-2026-03-09T01:46:21.204696,process_start,eve,WS-1002,10.0.5.55,cmd.exe,wmic.exe,cmd.exe /c dir,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,failure
-2026-03-09T01:50:21.204696,auth_success,charlie,ENG-2201,192.168.1.20,outlook.exe,rundll32.exe,notepad.exe notes.txt,bob,,192.168.1.20,443,success
-2026-03-09T01:52:21.204696,process_start,eve,ENG-2201,10.0.0.15,excel.exe,notepad.exe,wmic cpu get name,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,success
-2026-03-09T01:56:21.204696,auth_failure,david,HR-4401,10.0.0.15,cmd.exe,wmic.exe,cmd.exe /c whoami && net user,charlie,,192.168.1.20,443,failure
-2026-03-09T01:56:21.204696,auth_failure,eve,HR-4401,10.0.5.55,excel.exe,rundll32.exe,reg.exe query HKLM\Software,eve,,10.0.5.55,135,success
-2026-03-09T01:58:21.204696,registry_change,charlie,WS-1001,192.168.1.20,winword.exe,notepad.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,failure
-2026-03-09T01:59:21.204696,process_start,bob,DC-01,192.168.1.20,outlook.exe,cmd.exe,powershell.exe -EncodedCommand SQBFAFgA,eve,,10.0.1.10,80,failure
-2026-03-09T02:01:21.204696,process_start,alice,WS-1002,10.0.0.22,outlook.exe,rundll32.exe,notepad.exe notes.txt,grace,,10.0.5.55,135,success
-2026-03-09T02:02:21.204696,auth_success,frank,WS-1003,10.0.0.22,cmd.exe,rundll32.exe,powershell.exe Get-Process,alice,,10.0.0.22,445,failure
-2026-03-09T02:02:21.204696,auth_success,frank,WS-1002,10.0.0.22,explorer.exe,notepad.exe,wmic cpu get name,frank,,10.0.0.15,445,success
-2026-03-09T02:05:21.204696,process_start,alice,DC-01,192.168.1.20,winword.exe,wmic.exe,reg.exe query HKLM\Software,grace,,10.0.5.55,139,success
-2026-03-09T02:06:21.204696,auth_failure,eve,HR-4401,10.0.5.55,excel.exe,cmd.exe,notepad.exe notes.txt,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,failure
-2026-03-09T02:08:21.204696,registry_change,frank,WS-1001,10.0.1.10,outlook.exe,powershell.exe,powershell.exe Get-Process,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,failure
-2026-03-09T02:09:21.204696,auth_failure,charlie,DC-01,10.0.5.55,outlook.exe,wmic.exe,reg.exe query HKLM\Software,charlie,,10.0.0.15,3389,failure
-2026-03-09T02:12:21.204696,process_start,frank,DC-01,10.0.1.10,winword.exe,wmic.exe,cmd.exe /c dir,bob,,10.0.0.22,443,failure
-2026-03-09T02:12:21.204696,process_start,bob,WS-1003,192.168.1.20,services.exe,powershell.exe,cmd.exe /c dir,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,failure
-2026-03-09T02:14:21.204696,process_start,bob,ENG-2201,10.0.5.55,cmd.exe,reg.exe,cmd.exe /c dir,bob,,10.0.5.55,135,failure
-2026-03-09T02:14:21.204696,registry_change,charlie,DC-01,192.168.1.20,explorer.exe,rundll32.exe,powershell.exe -EncodedCommand SQBFAFgA,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,443,failure
-2026-03-09T02:15:21.204696,auth_success,eve,WS-1001,192.168.1.20,cmd.exe,wmic.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,failure
-2026-03-09T02:18:21.204696,process_start,alice,WS-1001,10.0.5.55,winword.exe,wmic.exe,powershell.exe Get-Process,david,,10.0.1.10,80,success
-2026-03-09T02:20:21.204696,auth_failure,grace,WS-1001,10.0.1.10,cmd.exe,wmic.exe,cmd.exe /c dir,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,3389,failure
-2026-03-09T02:22:21.204696,process_start,charlie,HR-4401,10.0.1.10,excel.exe,reg.exe,cmd.exe /c dir,alice,,10.0.5.55,445,success
-2026-03-09T02:24:21.204696,process_start,eve,HR-4401,192.168.1.20,explorer.exe,notepad.exe,wmic cpu get name,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,failure
-2026-03-09T02:25:21.204696,process_start,alice,WS-1002,10.0.5.55,excel.exe,notepad.exe,cmd.exe /c dir,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,3389,failure
-2026-03-09T02:26:21.204696,network_connection,eve,WS-1002,10.0.0.15,excel.exe,reg.exe,cmd.exe /c dir,frank,,10.0.0.15,445,success
-2026-03-09T02:27:21.204696,registry_change,charlie,HR-4401,10.0.0.22,winword.exe,cmd.exe,powershell.exe Get-Process,david,,10.0.0.15,445,success
-2026-03-09T02:28:21.204696,process_start,frank,WS-1001,10.0.0.15,winword.exe,notepad.exe,cmd.exe /c dir,alice,,10.0.5.55,139,failure
-2026-03-09T02:28:21.204696,auth_failure,eve,WS-1002,192.168.1.20,explorer.exe,rundll32.exe,wmic cpu get name,charlie,,10.0.0.15,135,failure
-2026-03-09T02:29:21.204696,network_connection,grace,WS-1002,192.168.1.20,cmd.exe,notepad.exe,notepad.exe notes.txt,eve,,192.168.1.20,80,failure
-2026-03-09T02:30:21.204696,process_start,frank,DC-01,10.0.1.10,explorer.exe,notepad.exe,notepad.exe notes.txt,charlie,,10.0.0.15,80,success
-2026-03-09T02:32:21.204696,process_start,eve,WS-1003,10.0.0.22,excel.exe,cmd.exe,powershell.exe -EncodedCommand SQBFAFgA,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,135,failure
-2026-03-09T02:34:21.204696,process_start,david,HR-4401,10.0.0.15,excel.exe,cmd.exe,wmic cpu get name,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,failure
-2026-03-09T02:35:21.204696,auth_failure,eve,DC-01,192.168.1.20,outlook.exe,rundll32.exe,wmic cpu get name,eve,,10.0.0.15,3389,failure
-2026-03-09T02:36:21.204696,process_start,bob,DC-01,10.0.0.15,excel.exe,wmic.exe,wmic process call create powershell.exe,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,3389,failure
-2026-03-09T02:38:21.204696,network_connection,grace,DC-01,10.0.0.22,cmd.exe,cmd.exe,reg.exe query HKLM\Software,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,443,failure
-2026-03-09T02:38:21.204696,process_start,charlie,ENG-2201,10.0.0.22,winword.exe,powershell.exe,wmic cpu get name,frank,,10.0.5.55,445,failure
-2026-03-09T02:39:21.204696,auth_success,bob,WS-1002,10.0.0.15,cmd.exe,wmic.exe,powershell.exe Get-Process,alice,,10.0.1.10,80,success
-2026-03-09T02:40:21.204696,auth_failure,alice,WS-1003,10.0.0.15,explorer.exe,wmic.exe,notepad.exe notes.txt,charlie,,192.168.1.20,139,success
-2026-03-09T02:42:21.204696,process_start,frank,ENG-2201,192.168.1.20,outlook.exe,powershell.exe,notepad.exe notes.txt,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,135,failure
-2026-03-09T02:45:21.204696,process_start,david,DC-01,10.0.0.22,explorer.exe,cmd.exe,wmic process call create powershell.exe,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,failure
-2026-03-09T02:46:21.204696,process_start,david,WS-1002,10.0.5.55,winword.exe,wmic.exe,notepad.exe notes.txt,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,3389,success
-2026-03-09T02:55:21.204696,process_start,alice,WS-1002,10.0.0.15,outlook.exe,notepad.exe,powershell.exe Get-Process,alice,,10.0.1.10,3389,failure
-2026-03-09T02:56:21.204696,process_start,bob,ENG-2201,192.168.1.20,cmd.exe,rundll32.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,alice,,10.0.1.10,80,success
-2026-03-09T03:00:21.204696,process_start,alice,WS-1001,10.0.5.55,winword.exe,cmd.exe,powershell.exe Get-Process,charlie,,10.0.5.55,139,success
-2026-03-09T03:02:21.204696,auth_success,grace,ENG-2201,192.168.1.20,cmd.exe,notepad.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,445,success
-2026-03-09T03:05:21.204696,process_start,charlie,WS-1003,192.168.1.20,services.exe,cmd.exe,powershell.exe Get-Process,alice,,10.0.1.10,135,failure
-2026-03-09T03:11:21.204696,process_start,frank,WS-1001,10.0.1.10,excel.exe,notepad.exe,cmd.exe /c dir,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,80,success
-2026-03-09T03:14:21.204696,registry_change,david,DC-01,10.0.5.55,cmd.exe,rundll32.exe,cmd.exe /c dir,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,failure
-2026-03-09T03:16:21.204696,registry_change,alice,WS-1003,10.0.0.15,excel.exe,wmic.exe,reg.exe query HKLM\Software,bob,,192.168.1.20,139,failure
-2026-03-09T03:17:21.204696,process_start,alice,HR-4401,10.0.5.55,winword.exe,reg.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,charlie,,10.0.0.22,445,success
-2026-03-09T03:18:21.204696,process_start,david,ENG-2201,10.0.5.55,winword.exe,rundll32.exe,notepad.exe notes.txt,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,failure
-2026-03-09T03:18:21.204696,process_start,charlie,ENG-2201,10.0.0.22,winword.exe,notepad.exe,notepad.exe notes.txt,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,success
-2026-03-09T03:20:21.204696,auth_success,alice,WS-1002,192.168.1.20,winword.exe,wmic.exe,wmic cpu get name,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,failure
-2026-03-09T03:21:21.204696,network_connection,frank,WS-1001,10.0.1.10,explorer.exe,reg.exe,wmic cpu get name,frank,,192.168.1.20,135,success
-2026-03-09T03:22:21.204696,process_start,eve,WS-1002,10.0.1.10,explorer.exe,notepad.exe,cmd.exe /c whoami && net user,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,80,success
-2026-03-09T03:26:21.204696,auth_failure,alice,DC-01,10.0.5.55,excel.exe,powershell.exe,reg.exe query HKLM\Software,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,success
-2026-03-09T03:26:21.204696,network_connection,eve,WS-1003,10.0.0.15,excel.exe,rundll32.exe,reg.exe query HKLM\Software,alice,,10.0.5.55,139,failure
-2026-03-09T03:27:21.204696,auth_success,charlie,ENG-2201,10.0.0.22,excel.exe,wmic.exe,powershell.exe Get-Process,eve,,10.0.5.55,80,failure
-2026-03-09T03:28:21.204696,process_start,eve,WS-1001,10.0.1.10,explorer.exe,reg.exe,wmic cpu get name,bob,,192.168.1.20,80,success
-2026-03-09T03:29:21.204696,process_start,bob,WS-1001,192.168.1.20,services.exe,cmd.exe,wmic cpu get name,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,success
-2026-03-09T03:31:21.204696,auth_success,david,WS-1002,10.0.1.10,winword.exe,rundll32.exe,reg.exe query HKLM\Software,david,,192.168.1.20,443,failure
-2026-03-09T03:32:21.204696,process_start,alice,ENG-2201,10.0.0.22,explorer.exe,wmic.exe,reg.exe query HKLM\Software,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,failure
-2026-03-09T03:40:21.204696,process_start,grace,WS-1003,10.0.0.22,services.exe,rundll32.exe,powershell.exe -EncodedCommand SQBFAFgA,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,135,failure
-2026-03-09T03:41:21.204696,auth_failure,eve,WS-1002,10.0.0.22,excel.exe,cmd.exe,wmic cpu get name,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,135,success
-2026-03-09T03:41:21.204696,process_start,bob,DC-01,192.168.1.20,excel.exe,notepad.exe,notepad.exe notes.txt,eve,,10.0.1.10,443,success
-2026-03-09T03:44:21.204696,auth_failure,frank,WS-1001,10.0.0.15,winword.exe,wmic.exe,notepad.exe notes.txt,eve,,10.0.5.55,139,failure
-2026-03-09T03:44:21.204696,process_start,bob,WS-1003,10.0.1.10,outlook.exe,rundll32.exe,cmd.exe /c dir,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,3389,failure
-2026-03-09T03:46:21.204696,process_start,charlie,DC-01,10.0.0.15,winword.exe,rundll32.exe,wmic cpu get name,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,failure
-2026-03-09T03:48:21.204696,auth_failure,charlie,WS-1003,192.168.1.20,outlook.exe,wmic.exe,wmic process call create powershell.exe,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,139,failure
-2026-03-09T03:50:21.204696,process_start,charlie,WS-1001,192.168.1.20,explorer.exe,notepad.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,eve,,10.0.0.15,445,failure
-2026-03-09T03:54:21.204696,process_start,grace,DC-01,10.0.0.22,services.exe,rundll32.exe,cmd.exe /c dir,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,80,success
-2026-03-09T03:56:21.204696,process_start,grace,WS-1002,10.0.0.15,explorer.exe,rundll32.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,failure
-2026-03-09T03:58:21.204696,registry_change,frank,ENG-2201,10.0.1.10,explorer.exe,wmic.exe,notepad.exe notes.txt,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,3389,success
-2026-03-09T03:59:21.204696,process_start,frank,WS-1002,10.0.5.55,cmd.exe,rundll32.exe,wmic cpu get name,bob,,192.168.1.20,139,failure
-2026-03-09T04:00:21.204696,registry_change,alice,DC-01,10.0.0.15,outlook.exe,cmd.exe,powershell.exe Get-Process,david,,192.168.1.20,139,failure
-2026-03-09T04:00:21.204696,process_start,eve,HR-4401,10.0.0.15,winword.exe,reg.exe,reg.exe query HKLM\Software,bob,,10.0.5.55,135,success
-2026-03-09T04:02:21.204696,auth_failure,alice,ENG-2201,192.168.1.20,explorer.exe,rundll32.exe,wmic cpu get name,grace,,192.168.1.20,135,failure
-2026-03-09T04:02:21.204696,auth_failure,charlie,WS-1002,192.168.1.20,services.exe,notepad.exe,cmd.exe /c dir,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,443,failure
-2026-03-09T04:05:21.204696,auth_failure,grace,WS-1002,10.0.0.22,explorer.exe,powershell.exe,cmd.exe /c dir,frank,,10.0.0.22,80,failure
-2026-03-09T04:06:21.204696,auth_failure,frank,DC-01,10.0.0.22,services.exe,rundll32.exe,notepad.exe notes.txt,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,failure
-2026-03-09T04:06:21.204696,process_start,alice,WS-1001,10.0.0.22,services.exe,reg.exe,reg.exe query HKLM\Software,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,failure
-2026-03-09T04:07:21.204696,auth_failure,alice,ENG-2201,192.168.1.20,cmd.exe,rundll32.exe,cmd.exe /c dir,alice,,10.0.5.55,3389,success
-2026-03-09T04:08:21.204696,process_start,eve,WS-1003,10.0.0.15,services.exe,notepad.exe,powershell.exe Get-Process,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,80,failure
-2026-03-09T04:08:21.204696,process_start,david,DC-01,10.0.0.22,explorer.exe,rundll32.exe,wmic process call create powershell.exe,david,,10.0.5.55,443,failure
-2026-03-09T04:11:21.204696,process_start,grace,DC-01,192.168.1.20,explorer.exe,cmd.exe,notepad.exe notes.txt,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,135,failure
-2026-03-09T04:12:21.204696,auth_success,eve,WS-1001,10.0.0.22,outlook.exe,notepad.exe,cmd.exe /c dir,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,3389,success
-2026-03-09T04:13:21.204696,network_connection,frank,ENG-2201,10.0.1.10,excel.exe,wmic.exe,powershell.exe Get-Process,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,3389,failure
-2026-03-09T04:14:21.204696,process_start,frank,WS-1001,10.0.0.22,explorer.exe,wmic.exe,cmd.exe /c dir,grace,,192.168.1.20,445,success
-2026-03-09T04:15:21.204696,process_start,charlie,WS-1001,10.0.0.15,services.exe,reg.exe,wmic process call create powershell.exe,charlie,,10.0.0.15,3389,success
-2026-03-09T04:16:21.204696,auth_success,grace,WS-1001,192.168.1.20,explorer.exe,reg.exe,cmd.exe /c dir,alice,,10.0.5.55,443,failure
-2026-03-09T04:18:21.204696,process_start,grace,ENG-2201,10.0.0.22,excel.exe,notepad.exe,powershell.exe Get-Process,eve,,192.168.1.20,139,success
-2026-03-09T04:20:21.204696,registry_change,alice,WS-1001,10.0.5.55,services.exe,wmic.exe,notepad.exe notes.txt,frank,,10.0.0.15,139,failure
-2026-03-09T04:20:21.204696,process_start,charlie,DC-01,10.0.0.22,outlook.exe,cmd.exe,cmd.exe /c dir,alice,,10.0.0.22,443,failure
-2026-03-09T04:21:21.204696,network_connection,alice,WS-1001,10.0.5.55,outlook.exe,powershell.exe,notepad.exe notes.txt,alice,,10.0.0.15,80,failure
-2026-03-09T04:23:21.204696,process_start,charlie,DC-01,10.0.1.10,excel.exe,powershell.exe,cmd.exe /c dir,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,failure
-2026-03-09T04:23:21.204696,process_start,david,WS-1001,192.168.1.20,services.exe,powershell.exe,wmic cpu get name,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,success
-2026-03-09T04:24:21.204696,auth_success,frank,WS-1002,10.0.1.10,winword.exe,reg.exe,cmd.exe /c dir,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,80,failure
-2026-03-09T04:28:21.204696,process_start,charlie,ENG-2201,10.0.5.55,excel.exe,notepad.exe,cmd.exe /c dir,bob,,10.0.0.22,445,success
-2026-03-09T04:29:21.204696,process_start,david,WS-1001,10.0.0.15,explorer.exe,rundll32.exe,reg.exe query HKLM\Software,david,,10.0.0.15,445,success
-2026-03-09T04:32:21.204696,auth_success,grace,WS-1003,10.0.5.55,outlook.exe,wmic.exe,notepad.exe notes.txt,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,443,failure
-2026-03-09T04:34:21.204696,process_start,david,WS-1002,10.0.5.55,outlook.exe,reg.exe,wmic cpu get name,bob,,10.0.0.22,3389,success
-2026-03-09T04:36:21.204696,network_connection,alice,WS-1001,192.168.1.20,excel.exe,reg.exe,notepad.exe notes.txt,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,445,failure
-2026-03-09T04:38:21.204696,auth_success,charlie,DC-01,192.168.1.20,outlook.exe,powershell.exe,cmd.exe /c dir,frank,,192.168.1.20,3389,success
-2026-03-09T04:40:21.204696,auth_failure,bob,ENG-2201,192.168.1.20,cmd.exe,cmd.exe,powershell.exe Get-Process,bob,,10.0.0.15,139,success
-2026-03-09T04:42:21.204696,process_start,alice,ENG-2201,10.0.5.55,explorer.exe,reg.exe,powershell.exe Get-Process,frank,,10.0.1.10,3389,success
-2026-03-09T04:44:21.204696,process_start,bob,WS-1001,10.0.1.10,excel.exe,notepad.exe,powershell.exe Get-Process,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,success
-2026-03-09T04:44:21.204696,registry_change,eve,DC-01,192.168.1.20,excel.exe,reg.exe,cmd.exe /c dir,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,failure
-2026-03-09T04:44:21.204696,process_start,grace,DC-01,10.0.0.15,services.exe,cmd.exe,cmd.exe /c dir,david,,10.0.0.22,3389,success
-2026-03-09T04:47:21.204696,process_start,bob,DC-01,10.0.5.55,services.exe,wmic.exe,wmic cpu get name,eve,,10.0.1.10,80,success
-2026-03-09T04:48:21.204696,network_connection,david,ENG-2201,10.0.5.55,explorer.exe,cmd.exe,wmic cpu get name,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,135,success
-2026-03-09T04:48:21.204696,auth_success,bob,HR-4401,10.0.0.15,explorer.exe,cmd.exe,reg.exe query HKLM\Software,david,,10.0.5.55,139,failure
-2026-03-09T04:49:21.204696,auth_failure,bob,DC-01,10.0.0.15,services.exe,cmd.exe,cmd.exe /c dir,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,success
-2026-03-09T04:50:21.204696,process_start,grace,WS-1003,10.0.0.15,explorer.exe,reg.exe,powershell.exe Get-Process,david,,192.168.1.20,135,failure
-2026-03-09T04:52:21.204696,process_start,frank,ENG-2201,192.168.1.20,explorer.exe,rundll32.exe,wmic cpu get name,eve,,192.168.1.20,3389,success
-2026-03-09T04:53:21.204696,network_connection,david,DC-01,192.168.1.20,excel.exe,reg.exe,cmd.exe /c dir,bob,,10.0.1.10,80,failure
-2026-03-09T04:54:21.204696,process_start,charlie,WS-1001,10.0.0.22,excel.exe,wmic.exe,notepad.exe notes.txt,eve,,10.0.1.10,3389,failure
-2026-03-09T04:55:21.204696,process_start,grace,WS-1003,192.168.1.20,excel.exe,rundll32.exe,cmd.exe /c dir,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,135,success
-2026-03-09T04:58:21.204696,auth_failure,grace,ENG-2201,10.0.0.15,excel.exe,reg.exe,wmic cpu get name,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,80,failure
-2026-03-09T04:59:21.204696,process_start,frank,WS-1001,10.0.0.15,services.exe,wmic.exe,notepad.exe notes.txt,charlie,,10.0.5.55,445,failure
-2026-03-09T05:00:21.204696,auth_failure,frank,HR-4401,10.0.0.22,explorer.exe,notepad.exe,wmic cpu get name,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,failure
-2026-03-09T05:01:21.204696,auth_failure,bob,DC-01,192.168.1.20,services.exe,wmic.exe,notepad.exe notes.txt,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,success
-2026-03-09T05:02:21.204696,auth_failure,alice,DC-01,10.0.0.15,explorer.exe,wmic.exe,notepad.exe notes.txt,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,445,success
-2026-03-09T05:03:21.204696,process_start,eve,WS-1002,10.0.0.22,winword.exe,powershell.exe,powershell.exe Get-Process,frank,,192.168.1.20,3389,failure
-2026-03-09T05:04:21.204696,auth_success,bob,WS-1003,192.168.1.20,winword.exe,wmic.exe,notepad.exe notes.txt,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,failure
-2026-03-09T05:05:21.204696,process_start,alice,ENG-2201,10.0.0.15,excel.exe,notepad.exe,reg.exe query HKLM\Software,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,success
-2026-03-09T05:06:21.204696,auth_failure,david,HR-4401,10.0.0.15,winword.exe,notepad.exe,wmic cpu get name,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,80,failure
-2026-03-09T05:08:21.204696,auth_failure,bob,DC-01,10.0.1.10,explorer.exe,cmd.exe,wmic cpu get name,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,135,success
-2026-03-09T05:10:21.204696,network_connection,frank,DC-01,10.0.5.55,winword.exe,notepad.exe,wmic cpu get name,frank,,10.0.1.10,3389,failure
-2026-03-09T05:11:21.204696,process_start,frank,ENG-2201,10.0.5.55,cmd.exe,rundll32.exe,powershell.exe Get-Process,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,success
-2026-03-09T05:15:21.204696,auth_failure,frank,HR-4401,10.0.0.22,cmd.exe,cmd.exe,notepad.exe notes.txt,alice,,10.0.0.15,443,success
-2026-03-09T05:16:21.204696,registry_change,alice,HR-4401,192.168.1.20,services.exe,cmd.exe,wmic cpu get name,frank,,10.0.5.55,139,failure
-2026-03-09T05:16:21.204696,process_start,alice,HR-4401,192.168.1.20,outlook.exe,notepad.exe,wmic cpu get name,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,80,failure
-2026-03-09T05:17:21.204696,network_connection,bob,WS-1002,10.0.1.10,winword.exe,wmic.exe,notepad.exe notes.txt,charlie,,192.168.1.20,139,failure
-2026-03-09T05:17:21.204696,registry_change,bob,ENG-2201,10.0.0.22,explorer.exe,reg.exe,reg.exe query HKLM\Software,alice,,10.0.0.15,139,failure
-2026-03-09T05:18:21.204696,auth_success,charlie,WS-1001,10.0.5.55,outlook.exe,powershell.exe,powershell.exe Get-Process,frank,,10.0.0.22,3389,success
-2026-03-09T05:24:21.204696,process_start,alice,ENG-2201,10.0.5.55,excel.exe,rundll32.exe,cmd.exe /c dir,grace,,192.168.1.20,445,success
-2026-03-09T05:26:21.204696,process_start,frank,HR-4401,10.0.0.22,explorer.exe,reg.exe,powershell.exe Get-Process,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,135,success
-2026-03-09T05:26:21.204696,process_start,frank,WS-1003,10.0.1.10,excel.exe,powershell.exe,powershell.exe Get-Process,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,failure
-2026-03-09T05:36:21.204696,network_connection,charlie,WS-1003,10.0.1.10,cmd.exe,rundll32.exe,cmd.exe /c dir,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,success
-2026-03-09T05:37:21.204696,process_start,alice,HR-4401,10.0.0.22,outlook.exe,rundll32.exe,wmic cpu get name,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,success
-2026-03-09T05:38:21.204696,process_start,grace,HR-4401,10.0.1.10,services.exe,reg.exe,reg.exe query HKLM\Software,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,failure
-2026-03-09T05:40:21.204696,process_start,alice,WS-1002,192.168.1.20,cmd.exe,wmic.exe,powershell.exe Get-Process,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,success
-2026-03-09T05:41:21.204696,process_start,bob,WS-1001,10.0.1.10,explorer.exe,rundll32.exe,wmic cpu get name,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,success
-2026-03-09T05:42:21.204696,process_start,alice,WS-1003,10.0.0.22,outlook.exe,notepad.exe,reg.exe query HKLM\Software,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,135,success
-2026-03-09T05:44:21.204696,registry_change,charlie,WS-1003,10.0.0.22,winword.exe,powershell.exe,cmd.exe /c dir,eve,,10.0.5.55,445,success
-2026-03-09T05:48:21.204696,process_start,frank,ENG-2201,10.0.1.10,cmd.exe,cmd.exe,powershell.exe -EncodedCommand SQBFAFgA,alice,,10.0.0.22,3389,success
-2026-03-09T05:50:21.204696,auth_success,charlie,DC-01,10.0.0.15,services.exe,reg.exe,cmd.exe /c dir,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,80,failure
-2026-03-09T05:50:21.204696,network_connection,grace,WS-1003,192.168.1.20,winword.exe,powershell.exe,notepad.exe notes.txt,frank,,10.0.5.55,139,success
-2026-03-09T05:51:21.204696,network_connection,david,ENG-2201,10.0.0.15,explorer.exe,cmd.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,bob,,10.0.5.55,135,success
-2026-03-09T05:53:21.204696,registry_change,alice,ENG-2201,10.0.5.55,services.exe,wmic.exe,reg.exe query HKLM\Software,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,3389,failure
-2026-03-09T05:54:21.204696,process_start,grace,DC-01,192.168.1.20,winword.exe,powershell.exe,powershell.exe Get-Process,charlie,,10.0.0.22,139,failure
-2026-03-09T05:56:21.204696,process_start,frank,WS-1003,10.0.1.10,winword.exe,reg.exe,wmic cpu get name,frank,,192.168.1.20,135,failure
-2026-03-09T05:56:21.204696,auth_failure,david,HR-4401,10.0.1.10,winword.exe,powershell.exe,notepad.exe notes.txt,david,,192.168.1.20,3389,failure
-2026-03-09T05:58:21.204696,process_start,bob,WS-1003,10.0.0.15,cmd.exe,notepad.exe,powershell.exe Get-Process,grace,,192.168.1.20,80,failure
-2026-03-09T05:59:21.204696,network_connection,frank,HR-4401,10.0.1.10,winword.exe,powershell.exe,reg.exe query HKLM\Software,charlie,,10.0.0.22,443,failure
-2026-03-09T06:00:21.204696,auth_failure,frank,ENG-2201,10.0.0.15,explorer.exe,powershell.exe,reg.exe query HKLM\Software,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,139,success
-2026-03-09T06:02:21.204696,registry_change,eve,DC-01,10.0.0.22,outlook.exe,cmd.exe,cmd.exe /c dir,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,failure
-2026-03-09T06:02:21.204696,process_start,grace,WS-1003,192.168.1.20,excel.exe,reg.exe,notepad.exe notes.txt,bob,,192.168.1.20,80,failure
-2026-03-09T06:04:21.204696,process_start,alice,ENG-2201,10.0.1.10,services.exe,cmd.exe,reg.exe query HKLM\Software,eve,,10.0.0.15,139,success
-2026-03-09T06:04:21.204696,auth_success,eve,WS-1001,10.0.5.55,outlook.exe,powershell.exe,cmd.exe /c dir,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,443,failure
-2026-03-09T06:05:21.204696,auth_failure,bob,WS-1003,10.0.0.22,cmd.exe,rundll32.exe,powershell.exe Get-Process,eve,,10.0.0.15,135,failure
-2026-03-09T06:08:21.204696,process_start,eve,WS-1001,10.0.5.55,excel.exe,wmic.exe,powershell.exe Get-Process,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,success
-2026-03-09T06:10:21.204696,process_start,alice,WS-1003,10.0.1.10,cmd.exe,cmd.exe,powershell.exe Get-Process,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,139,success
-2026-03-09T06:12:21.204696,process_start,bob,DC-01,192.168.1.20,excel.exe,notepad.exe,notepad.exe notes.txt,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,80,failure
-2026-03-09T06:13:21.204696,auth_failure,charlie,WS-1002,10.0.1.10,explorer.exe,reg.exe,cmd.exe /c dir,grace,,10.0.0.15,445,failure
-2026-03-09T06:14:21.204696,auth_success,frank,WS-1001,10.0.0.22,cmd.exe,wmic.exe,reg.exe query HKLM\Software,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,success
-2026-03-09T06:18:21.204696,network_connection,grace,WS-1001,10.0.5.55,outlook.exe,notepad.exe,reg.exe query HKLM\Software,bob,,10.0.0.22,135,success
-2026-03-09T06:20:21.204696,process_start,eve,DC-01,10.0.1.10,outlook.exe,reg.exe,reg.exe query HKLM\Software,frank,,192.168.1.20,135,success
-2026-03-09T06:20:21.204696,auth_success,grace,HR-4401,10.0.0.15,outlook.exe,reg.exe,powershell.exe Get-Process,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,445,failure
-2026-03-09T06:22:21.204696,process_start,charlie,WS-1003,10.0.5.55,winword.exe,cmd.exe,reg.exe query HKLM\Software,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,failure
-2026-03-09T06:23:21.204696,process_start,david,WS-1003,10.0.5.55,excel.exe,powershell.exe,wmic cpu get name,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,success
-2026-03-09T06:24:21.204696,auth_failure,alice,ENG-2201,10.0.5.55,winword.exe,wmic.exe,notepad.exe notes.txt,charlie,,10.0.0.22,445,success
-2026-03-09T06:26:21.204696,process_start,eve,WS-1003,192.168.1.20,winword.exe,reg.exe,powershell.exe Get-Process,alice,,10.0.0.15,135,failure
-2026-03-09T06:30:21.204696,auth_failure,grace,WS-1001,10.0.5.55,excel.exe,reg.exe,powershell.exe Get-Process,grace,,10.0.0.22,443,success
-2026-03-09T06:32:21.204696,auth_failure,david,WS-1003,192.168.1.20,outlook.exe,wmic.exe,cmd.exe /c dir,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,success
-2026-03-09T06:34:21.204696,auth_failure,bob,WS-1003,10.0.0.15,services.exe,powershell.exe,cmd.exe /c whoami && net user,frank,,10.0.0.15,443,failure
-2026-03-09T06:42:21.204696,process_start,frank,WS-1003,10.0.5.55,excel.exe,wmic.exe,powershell.exe -EncodedCommand SQBFAFgA,alice,,10.0.0.22,443,failure
-2026-03-09T06:48:21.204696,auth_failure,alice,WS-1003,10.0.5.55,cmd.exe,cmd.exe,wmic process call create powershell.exe,david,,10.0.0.22,135,success
-2026-03-09T06:50:21.204696,auth_failure,bob,DC-01,10.0.0.22,outlook.exe,reg.exe,reg.exe query HKLM\Software,david,,192.168.1.20,139,failure
-2026-03-09T06:52:21.204696,process_start,charlie,DC-01,10.0.1.10,winword.exe,reg.exe,cmd.exe /c dir,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,80,failure
-2026-03-09T07:04:21.204696,registry_change,bob,WS-1003,10.0.1.10,services.exe,cmd.exe,reg.exe query HKLM\Software,david,,10.0.0.15,443,failure
-2026-03-09T07:05:21.204696,auth_failure,charlie,HR-4401,10.0.0.22,outlook.exe,wmic.exe,reg.exe query HKLM\Software,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,445,failure
-2026-03-09T07:06:21.204696,process_start,david,WS-1001,10.0.0.15,excel.exe,wmic.exe,cmd.exe /c dir,david,,10.0.1.10,445,success
-2026-03-09T07:08:21.204696,auth_failure,grace,WS-1001,192.168.1.20,services.exe,wmic.exe,powershell.exe Get-Process,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,failure
-2026-03-09T07:11:21.204696,process_start,grace,WS-1002,10.0.1.10,explorer.exe,wmic.exe,cmd.exe /c dir,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,139,success
-2026-03-09T07:14:21.204696,network_connection,david,WS-1003,10.0.0.22,cmd.exe,notepad.exe,notepad.exe notes.txt,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,445,success
-2026-03-09T07:24:21.204696,process_start,eve,WS-1003,10.0.5.55,excel.exe,cmd.exe,notepad.exe notes.txt,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,failure
-2026-03-09T07:29:21.204696,process_start,grace,DC-01,10.0.0.15,outlook.exe,reg.exe,cmd.exe /c dir,eve,,10.0.0.22,3389,failure
-2026-03-09T07:40:21.204696,process_start,alice,WS-1003,192.168.1.20,winword.exe,rundll32.exe,wmic cpu get name,bob,,10.0.5.55,135,failure
-2026-03-09T07:41:21.204696,process_start,david,HR-4401,10.0.0.15,excel.exe,cmd.exe,cmd.exe /c dir,frank,,192.168.1.20,80,success
-2026-03-09T07:44:21.204696,process_start,eve,HR-4401,10.0.0.22,cmd.exe,reg.exe,cmd.exe /c dir,bob,,192.168.1.20,445,failure
-2026-03-09T07:47:21.204696,process_start,eve,HR-4401,10.0.0.22,cmd.exe,cmd.exe,wmic cpu get name,bob,,10.0.0.22,443,success
-2026-03-09T07:50:21.204696,network_connection,alice,WS-1002,192.168.1.20,winword.exe,cmd.exe,powershell.exe Get-Process,david,,10.0.5.55,445,failure
-2026-03-09T07:54:21.204696,auth_success,alice,ENG-2201,192.168.1.20,winword.exe,wmic.exe,cmd.exe /c dir,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,445,success
-2026-03-09T07:56:21.204696,auth_success,grace,WS-1003,10.0.5.55,outlook.exe,wmic.exe,notepad.exe notes.txt,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,135,success
-2026-03-09T07:56:21.204696,auth_success,frank,HR-4401,10.0.0.15,explorer.exe,reg.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,bob,,10.0.0.15,80,failure
-2026-03-09T07:59:21.204696,process_start,david,ENG-2201,10.0.5.55,winword.exe,powershell.exe,reg.exe query HKLM\Software,frank,,10.0.0.22,3389,failure
-2026-03-09T08:00:21.204696,process_start,bob,WS-1002,10.0.5.55,cmd.exe,reg.exe,cmd.exe /c dir,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,135,failure
-2026-03-09T08:02:21.204696,process_start,frank,WS-1002,192.168.1.20,explorer.exe,wmic.exe,wmic cpu get name,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,failure
-2026-03-09T08:08:21.204696,process_start,alice,WS-1002,10.0.0.22,cmd.exe,notepad.exe,reg.exe query HKLM\Software,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,135,success
-2026-03-09T08:11:21.204696,auth_failure,alice,WS-1003,10.0.5.55,services.exe,powershell.exe,reg.exe query HKLM\Software,frank,,10.0.0.22,139,failure
-2026-03-09T08:16:21.204696,registry_change,frank,HR-4401,192.168.1.20,excel.exe,cmd.exe,powershell.exe Get-Process,frank,,10.0.5.55,443,failure
-2026-03-09T08:18:21.204696,network_connection,alice,WS-1001,10.0.0.15,outlook.exe,powershell.exe,wmic process call create powershell.exe,alice,,192.168.1.20,135,failure
-2026-03-09T08:23:21.204696,process_start,alice,ENG-2201,10.0.0.15,outlook.exe,rundll32.exe,wmic cpu get name,frank,,10.0.0.15,139,success
-2026-03-09T08:26:21.204696,registry_change,david,WS-1002,10.0.0.15,excel.exe,powershell.exe,cmd.exe /c dir,alice,,10.0.5.55,135,failure
-2026-03-09T08:28:21.204696,process_start,eve,WS-1003,10.0.0.22,services.exe,reg.exe,reg.exe query HKLM\Software,grace,,10.0.1.10,445,success
-2026-03-09T08:34:21.204696,network_connection,frank,WS-1002,10.0.1.10,excel.exe,wmic.exe,cmd.exe /c dir,david,,10.0.1.10,443,success
-2026-03-09T08:38:21.204696,auth_success,bob,ENG-2201,10.0.1.10,excel.exe,powershell.exe,wmic cpu get name,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,failure
-2026-03-09T08:47:21.204696,process_start,charlie,DC-01,10.0.0.15,winword.exe,notepad.exe,powershell.exe Get-Process,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,success
-2026-03-09T08:50:21.204696,process_start,charlie,WS-1002,10.0.0.22,excel.exe,cmd.exe,cmd.exe /c dir,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,3389,success
-2026-03-09T08:58:21.204696,process_start,alice,ENG-2201,192.168.1.20,cmd.exe,reg.exe,powershell.exe Get-Process,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,failure
-2026-03-09T09:02:21.204696,process_start,eve,DC-01,10.0.5.55,excel.exe,cmd.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,failure
-2026-03-09T09:04:21.204696,process_start,alice,DC-01,10.0.1.10,services.exe,rundll32.exe,powershell.exe -EncodedCommand SQBFAFgA,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,135,failure
-2026-03-09T09:05:21.204696,registry_change,david,ENG-2201,10.0.5.55,excel.exe,rundll32.exe,powershell.exe Get-Process,alice,,192.168.1.20,135,failure
-2026-03-09T09:08:21.204696,auth_failure,grace,DC-01,192.168.1.20,cmd.exe,powershell.exe,cmd.exe /c dir,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,3389,success
-2026-03-09T09:10:21.204696,auth_success,grace,WS-1002,10.0.0.15,explorer.exe,rundll32.exe,reg.exe query HKLM\Software,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,failure
-2026-03-09T09:11:21.204696,auth_failure,charlie,WS-1003,192.168.1.20,winword.exe,powershell.exe,reg.exe query HKLM\Software,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,139,success
-2026-03-09T09:14:21.204696,auth_failure,david,DC-01,10.0.0.15,explorer.exe,powershell.exe,cmd.exe /c dir,alice,,10.0.0.22,139,failure
-2026-03-09T09:17:21.204696,process_start,bob,WS-1003,10.0.5.55,cmd.exe,powershell.exe,reg.exe query HKLM\Software,charlie,,10.0.0.15,443,success
-2026-03-09T09:23:21.204696,process_start,eve,HR-4401,10.0.0.15,winword.exe,notepad.exe,powershell.exe Get-Process,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,135,failure
-2026-03-09T09:28:21.204696,process_start,grace,WS-1002,10.0.0.22,services.exe,wmic.exe,wmic cpu get name,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,failure
-2026-03-09T09:30:21.204696,process_start,eve,WS-1001,10.0.0.15,cmd.exe,rundll32.exe,wmic cpu get name,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,success
-2026-03-09T09:32:21.204696,auth_failure,bob,ENG-2201,10.0.5.55,services.exe,cmd.exe,reg.exe query HKLM\Software,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,135,success
-2026-03-09T09:36:21.204696,network_connection,alice,HR-4401,10.0.0.15,cmd.exe,wmic.exe,powershell.exe Get-Process,david,,10.0.0.22,80,failure
-2026-03-09T09:40:21.204696,network_connection,alice,WS-1003,10.0.1.10,winword.exe,wmic.exe,cmd.exe /c dir,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,445,failure
-2026-03-09T09:42:21.204696,auth_success,alice,WS-1002,10.0.1.10,excel.exe,powershell.exe,reg.exe query HKLM\Software,eve,,192.168.1.20,3389,success
-2026-03-09T09:44:21.204696,process_start,alice,ENG-2201,192.168.1.20,outlook.exe,powershell.exe,notepad.exe notes.txt,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,80,failure
-2026-03-09T09:44:21.204696,auth_success,charlie,WS-1001,192.168.1.20,excel.exe,reg.exe,cmd.exe /c dir,alice,,10.0.0.15,443,success
-2026-03-09T09:47:21.204696,process_start,david,WS-1001,192.168.1.20,outlook.exe,cmd.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,80,failure
-2026-03-09T09:48:21.204696,network_connection,grace,WS-1002,192.168.1.20,cmd.exe,rundll32.exe,reg.exe query HKLM\Software,bob,,10.0.0.22,443,failure
-2026-03-09T09:50:21.204696,network_connection,frank,HR-4401,10.0.5.55,services.exe,wmic.exe,cmd.exe /c whoami && net user,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,failure
-2026-03-09T09:52:21.204696,auth_failure,frank,WS-1003,10.0.1.10,explorer.exe,wmic.exe,notepad.exe notes.txt,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,80,failure
-2026-03-09T09:54:21.204696,process_start,bob,HR-4401,192.168.1.20,excel.exe,reg.exe,powershell.exe Get-Process,david,,10.0.5.55,139,failure
-2026-03-09T09:56:21.204696,auth_failure,grace,WS-1003,192.168.1.20,cmd.exe,rundll32.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,charlie,,10.0.5.55,445,failure
-2026-03-09T10:04:21.204696,network_connection,grace,WS-1003,10.0.0.15,cmd.exe,rundll32.exe,wmic cpu get name,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,success
-2026-03-09T10:05:21.204696,process_start,david,WS-1003,10.0.1.10,outlook.exe,notepad.exe,powershell.exe Get-Process,charlie,,192.168.1.20,80,success
-2026-03-09T10:08:21.204696,process_start,grace,ENG-2201,192.168.1.20,explorer.exe,notepad.exe,cmd.exe /c dir,david,,10.0.5.55,445,success
-2026-03-09T10:14:21.204696,process_start,charlie,WS-1003,10.0.0.15,winword.exe,reg.exe,powershell.exe Get-Process,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,3389,success
-2026-03-09T10:20:21.204696,network_connection,david,HR-4401,10.0.1.10,excel.exe,rundll32.exe,reg.exe query HKLM\Software,grace,,10.0.5.55,3389,success
-2026-03-09T10:23:21.204696,process_start,frank,WS-1002,10.0.1.10,winword.exe,rundll32.exe,cmd.exe /c dir,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,failure
-2026-03-09T10:26:21.204696,process_start,bob,DC-01,10.0.1.10,winword.exe,reg.exe,powershell.exe Get-Process,frank,,10.0.5.55,443,failure
-2026-03-09T10:34:21.204696,process_start,frank,WS-1001,10.0.1.10,services.exe,cmd.exe,cmd.exe /c dir,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,failure
-2026-03-09T10:36:21.204696,process_start,david,HR-4401,10.0.0.15,outlook.exe,rundll32.exe,wmic cpu get name,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,3389,success
-2026-03-09T10:38:21.204696,process_start,frank,WS-1001,10.0.0.15,excel.exe,wmic.exe,reg.exe query HKLM\Software,alice,,10.0.5.55,80,success
-2026-03-09T10:40:21.204696,process_start,charlie,DC-01,10.0.0.22,cmd.exe,wmic.exe,reg.exe query HKLM\Software,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,445,failure
-2026-03-09T10:47:21.204696,auth_failure,eve,DC-01,10.0.1.10,cmd.exe,rundll32.exe,powershell.exe Get-Process,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,135,failure
-2026-03-09T10:48:21.204696,auth_success,eve,WS-1003,192.168.1.20,excel.exe,wmic.exe,wmic cpu get name,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,success
-2026-03-09T10:50:21.204696,auth_success,alice,DC-01,10.0.5.55,explorer.exe,notepad.exe,notepad.exe notes.txt,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,3389,success
-2026-03-09T10:50:21.204696,network_connection,eve,WS-1001,10.0.0.15,cmd.exe,notepad.exe,powershell.exe Get-Process,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,failure
-2026-03-09T10:56:21.204696,registry_change,charlie,DC-01,10.0.0.22,winword.exe,cmd.exe,wmic cpu get name,charlie,,10.0.5.55,445,success
-2026-03-09T10:59:21.204696,auth_success,david,WS-1001,10.0.1.10,explorer.exe,wmic.exe,cmd.exe /c dir,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,445,failure
-2026-03-09T11:00:21.204696,process_start,eve,ENG-2201,10.0.1.10,cmd.exe,powershell.exe,cmd.exe /c dir,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,135,success
-2026-03-09T11:02:21.204696,network_connection,bob,DC-01,10.0.5.55,services.exe,wmic.exe,cmd.exe /c dir,charlie,,10.0.1.10,80,success
-2026-03-09T11:04:21.204696,registry_change,david,ENG-2201,10.0.0.15,winword.exe,wmic.exe,cmd.exe /c dir,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,443,failure
-2026-03-09T11:05:21.204696,auth_success,grace,ENG-2201,10.0.1.10,cmd.exe,wmic.exe,reg.exe query HKLM\Software,charlie,,10.0.1.10,135,success
-2026-03-09T11:08:21.204696,auth_failure,bob,DC-01,192.168.1.20,winword.exe,cmd.exe,cmd.exe /c dir,charlie,,192.168.1.20,135,success
-2026-03-09T11:10:21.204696,network_connection,grace,WS-1002,10.0.1.10,cmd.exe,wmic.exe,powershell.exe Get-Process,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,3389,failure
-2026-03-09T11:11:21.204696,auth_failure,alice,ENG-2201,10.0.0.22,explorer.exe,powershell.exe,wmic cpu get name,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,failure
-2026-03-09T11:29:21.204696,network_connection,charlie,WS-1003,10.0.5.55,explorer.exe,reg.exe,cmd.exe /c dir,david,,10.0.1.10,135,failure
-2026-03-09T11:41:21.204696,registry_change,grace,WS-1001,10.0.0.15,cmd.exe,cmd.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,david,,10.0.1.10,445,success
-2026-03-09T12:08:21.204696,process_start,grace,WS-1001,10.0.1.10,excel.exe,reg.exe,wmic cpu get name,eve,,10.0.0.15,3389,failure
-2026-03-09T12:14:21.234485,auth_failure,alice,WS-1002,10.9.9.9,,,,alice,,,,failure
-2026-03-09T12:14:41.234485,auth_failure,bob,WS-1002,10.9.9.9,,,,bob,,,,failure
-2026-03-09T12:15:01.234485,auth_failure,charlie,WS-1002,10.9.9.9,,,,charlie,,,,failure
-2026-03-09T12:15:21.234485,auth_failure,david,WS-1002,10.9.9.9,,,,david,,,,failure
-2026-03-09T12:15:41.234485,auth_failure,eve,WS-1002,10.9.9.9,,,,eve,,,,failure
-2026-03-09T12:16:01.234485,auth_failure,frank,WS-1002,10.9.9.9,,,,frank,,,,failure
-2026-03-09T12:16:21.234485,auth_failure,grace,WS-1002,10.9.9.9,,,,grace,,,,failure
-2026-03-09T12:23:21.204696,auth_failure,grace,DC-01,10.0.0.15,winword.exe,powershell.exe,reg.exe query HKLM\Software,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,443,failure
-2026-03-09T12:32:21.204696,process_start,eve,WS-1001,10.0.5.55,winword.exe,wmic.exe,reg.exe query HKLM\Software,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,success
-2026-03-09T12:44:21.204696,network_connection,charlie,DC-01,10.0.0.22,cmd.exe,rundll32.exe,wmic cpu get name,david,,10.0.1.10,443,success
-2026-03-09T12:53:21.204696,registry_change,grace,WS-1002,10.0.5.55,outlook.exe,rundll32.exe,wmic cpu get name,eve,,10.0.0.15,443,success
-2026-03-09T13:11:21.204696,auth_failure,charlie,ENG-2201,10.0.1.10,services.exe,cmd.exe,wmic cpu get name,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,success
-2026-03-09T13:29:21.204696,network_connection,bob,WS-1002,10.0.0.22,excel.exe,wmic.exe,powershell.exe -EncodedCommand SQBFAFgA,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,135,failure
-2026-03-09T13:32:21.204696,auth_failure,eve,ENG-2201,10.0.5.55,services.exe,wmic.exe,powershell.exe Get-Process,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,135,success
-2026-03-09T14:02:21.204696,auth_success,charlie,WS-1002,10.0.5.55,cmd.exe,rundll32.exe,wmic cpu get name,david,,192.168.1.20,445,failure
-2026-03-09T14:41:21.204696,process_start,bob,WS-1003,192.168.1.20,services.exe,wmic.exe,wmic cpu get name,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,success
-2026-03-09T14:47:21.204696,registry_change,charlie,WS-1002,10.0.0.15,excel.exe,wmic.exe,notepad.exe notes.txt,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,3389,failure
-2026-03-09T14:50:21.204696,auth_failure,david,ENG-2201,10.0.5.55,cmd.exe,rundll32.exe,wmic cpu get name,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,failure
-2026-03-09T14:59:21.204696,process_start,frank,WS-1003,10.0.0.22,services.exe,notepad.exe,cmd.exe /c dir,grace,,10.0.1.10,80,success
-2026-03-09T15:08:21.204696,auth_failure,alice,HR-4401,10.0.1.10,services.exe,powershell.exe,wmic cpu get name,grace,,10.0.5.55,139,success
-2026-03-09T15:20:21.204696,process_start,bob,ENG-2201,10.0.5.55,outlook.exe,powershell.exe,cmd.exe /c dir,frank,,10.0.1.10,3389,success
-2026-03-09T15:26:21.204696,auth_failure,eve,HR-4401,10.0.0.22,excel.exe,cmd.exe,wmic cpu get name,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,445,success
-2026-03-09T15:29:21.204696,process_start,bob,WS-1001,10.0.0.22,explorer.exe,cmd.exe,cmd.exe /c dir,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,135,success
-2026-03-09T15:41:21.204696,process_start,frank,WS-1003,10.0.0.22,services.exe,rundll32.exe,wmic process call create powershell.exe,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,success
-2026-03-09T15:50:21.204696,auth_failure,eve,WS-1001,10.0.0.22,excel.exe,wmic.exe,reg.exe query HKLM\Software,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,139,failure
-2026-03-09T15:56:21.204696,process_start,grace,DC-01,10.0.0.22,explorer.exe,notepad.exe,wmic cpu get name,bob,,192.168.1.20,3389,failure
-2026-03-09T16:02:21.204696,process_start,frank,WS-1002,10.0.5.55,cmd.exe,reg.exe,reg.exe query HKLM\Software,alice,,192.168.1.20,443,failure
+2026-03-09T01:31:22.425229,auth_success,eve,WS-1002,10.0.0.22,winword.exe,cmd.exe,powershell.exe Get-Process,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,80,success
+2026-03-09T01:32:22.425229,process_start,grace,ENG-2201,192.168.1.20,winword.exe,wmic.exe,powershell.exe Get-Process,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,139,failure
+2026-03-09T01:33:22.425229,network_connection,grace,HR-4401,10.0.0.15,explorer.exe,wmic.exe,notepad.exe notes.txt,grace,,10.0.1.10,135,success
+2026-03-09T01:37:22.425229,process_start,bob,WS-1001,10.0.5.55,outlook.exe,rundll32.exe,notepad.exe notes.txt,grace,,10.0.5.55,80,failure
+2026-03-09T01:37:22.425229,process_start,charlie,DC-01,10.0.1.10,winword.exe,reg.exe,powershell.exe Get-Process,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,139,success
+2026-03-09T01:39:22.425229,auth_failure,grace,HR-4401,10.0.0.15,explorer.exe,rundll32.exe,notepad.exe notes.txt,grace,,192.168.1.20,139,failure
+2026-03-09T01:42:22.425229,process_start,frank,WS-1002,10.0.5.55,excel.exe,notepad.exe,wmic cpu get name,eve,,10.0.1.10,445,success
+2026-03-09T01:44:22.425229,auth_failure,david,WS-1001,10.0.1.10,excel.exe,cmd.exe,wmic cpu get name,eve,,10.0.1.10,139,failure
+2026-03-09T01:45:22.425229,network_connection,david,WS-1003,192.168.1.20,outlook.exe,wmic.exe,notepad.exe notes.txt,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,445,failure
+2026-03-09T01:45:22.425229,process_start,eve,DC-01,10.0.0.15,services.exe,reg.exe,notepad.exe notes.txt,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,failure
+2026-03-09T01:46:22.425229,registry_change,alice,DC-01,10.0.1.10,winword.exe,wmic.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,frank,,10.0.0.15,80,failure
+2026-03-09T01:46:22.425229,auth_failure,eve,WS-1003,10.0.5.55,excel.exe,rundll32.exe,wmic cpu get name,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,445,failure
+2026-03-09T01:48:22.425229,auth_failure,david,DC-01,10.0.1.10,services.exe,powershell.exe,powershell.exe Get-Process,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,443,failure
+2026-03-09T01:49:22.425229,process_start,alice,HR-4401,192.168.1.20,outlook.exe,powershell.exe,reg.exe query HKLM\Software,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,445,failure
+2026-03-09T01:52:22.425229,auth_failure,alice,DC-01,192.168.1.20,explorer.exe,rundll32.exe,notepad.exe notes.txt,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,139,success
+2026-03-09T01:53:22.425229,process_start,charlie,DC-01,192.168.1.20,explorer.exe,powershell.exe,notepad.exe notes.txt,alice,,10.0.0.15,80,failure
+2026-03-09T01:54:22.425229,process_start,charlie,HR-4401,10.0.5.55,excel.exe,notepad.exe,powershell.exe Get-Process,eve,,192.168.1.20,139,success
+2026-03-09T01:55:22.425229,auth_failure,alice,WS-1001,192.168.1.20,explorer.exe,rundll32.exe,powershell.exe -EncodedCommand SQBFAFgA,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,80,success
+2026-03-09T01:55:22.425229,process_start,grace,WS-1002,10.0.0.15,winword.exe,powershell.exe,reg.exe query HKLM\Software,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,80,failure
+2026-03-09T01:57:22.425229,process_start,eve,DC-01,10.0.0.22,winword.exe,wmic.exe,notepad.exe notes.txt,david,,192.168.1.20,80,success
+2026-03-09T02:00:22.425229,auth_failure,david,WS-1002,10.0.0.22,outlook.exe,wmic.exe,reg.exe query HKLM\Software,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,139,failure
+2026-03-09T02:01:22.425229,process_start,bob,ENG-2201,10.0.1.10,services.exe,notepad.exe,wmic cpu get name,grace,,10.0.0.15,80,failure
+2026-03-09T02:07:22.425229,process_start,bob,WS-1002,10.0.0.15,services.exe,notepad.exe,cmd.exe /c dir,bob,,192.168.1.20,135,success
+2026-03-09T02:09:22.425229,auth_failure,alice,WS-1002,10.0.5.55,cmd.exe,reg.exe,notepad.exe notes.txt,eve,,10.0.1.10,80,failure
+2026-03-09T02:10:22.425229,auth_success,alice,ENG-2201,10.0.5.55,winword.exe,notepad.exe,wmic cpu get name,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,success
+2026-03-09T02:11:22.425229,auth_success,alice,WS-1003,10.0.1.10,excel.exe,rundll32.exe,reg.exe query HKLM\Software,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,3389,failure
+2026-03-09T02:15:22.425229,process_start,frank,ENG-2201,192.168.1.20,services.exe,rundll32.exe,notepad.exe notes.txt,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,443,success
+2026-03-09T02:17:22.425229,auth_failure,eve,DC-01,10.0.1.10,explorer.exe,reg.exe,notepad.exe notes.txt,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,135,success
+2026-03-09T02:19:22.425229,process_start,grace,ENG-2201,10.0.0.22,excel.exe,notepad.exe,powershell.exe Get-Process,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,3389,failure
+2026-03-09T02:19:22.425229,process_start,david,WS-1001,10.0.1.10,cmd.exe,cmd.exe,reg.exe query HKLM\Software,frank,,10.0.5.55,135,failure
+2026-03-09T02:20:22.425229,process_start,grace,WS-1001,192.168.1.20,excel.exe,powershell.exe,reg.exe query HKLM\Software,bob,,10.0.0.15,445,failure
+2026-03-09T02:21:22.425229,process_start,charlie,DC-01,10.0.5.55,winword.exe,notepad.exe,notepad.exe notes.txt,grace,,10.0.1.10,443,success
+2026-03-09T02:23:22.425229,process_start,david,WS-1002,192.168.1.20,excel.exe,rundll32.exe,powershell.exe Get-Process,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,80,failure
+2026-03-09T02:26:22.425229,process_start,eve,HR-4401,10.0.0.15,services.exe,powershell.exe,wmic cpu get name,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,135,success
+2026-03-09T02:27:22.425229,process_start,david,DC-01,192.168.1.20,cmd.exe,reg.exe,powershell.exe Get-Process,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,443,success
+2026-03-09T02:28:22.425229,network_connection,charlie,ENG-2201,10.0.0.15,outlook.exe,powershell.exe,reg.exe query HKLM\Software,frank,,10.0.0.22,443,failure
+2026-03-09T02:31:22.425229,auth_success,alice,WS-1003,192.168.1.20,services.exe,reg.exe,powershell.exe Get-Process,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,success
+2026-03-09T02:33:22.425229,auth_success,grace,HR-4401,10.0.5.55,excel.exe,powershell.exe,notepad.exe notes.txt,eve,,10.0.5.55,443,success
+2026-03-09T02:35:22.425229,process_start,david,ENG-2201,10.0.0.22,winword.exe,reg.exe,notepad.exe notes.txt,eve,,10.0.0.15,135,success
+2026-03-09T02:39:22.425229,registry_change,grace,HR-4401,10.0.0.22,explorer.exe,wmic.exe,cmd.exe /c dir,grace,,10.0.0.22,80,success
+2026-03-09T02:39:22.425229,process_start,david,WS-1003,10.0.0.22,excel.exe,rundll32.exe,cmd.exe /c dir,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,3389,success
+2026-03-09T02:40:22.425229,process_start,eve,ENG-2201,10.0.0.22,excel.exe,powershell.exe,powershell.exe Get-Process,charlie,,192.168.1.20,445,success
+2026-03-09T02:41:22.425229,auth_failure,eve,WS-1002,192.168.1.20,explorer.exe,wmic.exe,powershell.exe Get-Process,frank,,10.0.0.15,139,success
+2026-03-09T02:41:22.425229,process_start,bob,WS-1001,10.0.0.22,services.exe,powershell.exe,powershell.exe Get-Process,frank,,10.0.0.15,80,failure
+2026-03-09T02:45:22.425229,auth_failure,bob,WS-1003,10.0.5.55,cmd.exe,powershell.exe,cmd.exe /c whoami && net user,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,80,failure
+2026-03-09T02:47:22.425229,network_connection,charlie,WS-1002,10.0.1.10,services.exe,wmic.exe,cmd.exe /c dir,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,443,success
+2026-03-09T02:51:22.425229,auth_failure,bob,HR-4401,10.0.5.55,outlook.exe,rundll32.exe,powershell.exe -EncodedCommand SQBFAFgA,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,success
+2026-03-09T02:51:22.425229,process_start,alice,DC-01,10.0.5.55,cmd.exe,cmd.exe,powershell.exe Get-Process,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,success
+2026-03-09T02:52:22.425229,auth_failure,grace,HR-4401,192.168.1.20,services.exe,notepad.exe,cmd.exe /c dir,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,failure
+2026-03-09T02:52:22.425229,process_start,david,WS-1001,10.0.5.55,services.exe,notepad.exe,reg.exe query HKLM\Software,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,443,success
+2026-03-09T02:55:22.425229,process_start,eve,DC-01,192.168.1.20,excel.exe,reg.exe,wmic cpu get name,david,,10.0.5.55,139,success
+2026-03-09T02:55:22.425229,auth_success,frank,WS-1002,192.168.1.20,winword.exe,reg.exe,notepad.exe notes.txt,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,443,success
+2026-03-09T02:58:22.425229,process_start,alice,DC-01,192.168.1.20,cmd.exe,rundll32.exe,powershell.exe -EncodedCommand SQBFAFgA,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,success
+2026-03-09T03:00:22.425229,process_start,alice,WS-1001,192.168.1.20,excel.exe,cmd.exe,wmic cpu get name,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,443,failure
+2026-03-09T03:01:22.425229,auth_failure,eve,WS-1001,10.0.0.15,winword.exe,reg.exe,cmd.exe /c dir,eve,,192.168.1.20,135,success
+2026-03-09T03:01:22.425229,network_connection,grace,HR-4401,10.0.0.15,winword.exe,cmd.exe,powershell.exe -EncodedCommand SQBFAFgA,frank,,192.168.1.20,3389,failure
+2026-03-09T03:04:22.425229,auth_failure,eve,DC-01,192.168.1.20,excel.exe,cmd.exe,reg.exe query HKLM\Software,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,success
+2026-03-09T03:05:22.425229,process_start,bob,WS-1001,10.0.0.15,services.exe,notepad.exe,powershell.exe Get-Process,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,445,failure
+2026-03-09T03:07:22.425229,auth_failure,charlie,WS-1002,10.0.1.10,outlook.exe,cmd.exe,wmic process call create powershell.exe,bob,,192.168.1.20,139,failure
+2026-03-09T03:10:22.425229,auth_success,frank,HR-4401,10.0.1.10,excel.exe,cmd.exe,wmic cpu get name,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,3389,failure
+2026-03-09T03:11:22.425229,network_connection,alice,WS-1003,10.0.0.15,outlook.exe,reg.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,grace,,10.0.1.10,139,failure
+2026-03-09T03:11:22.425229,network_connection,eve,DC-01,10.0.0.22,winword.exe,notepad.exe,reg.exe query HKLM\Software,bob,,10.0.0.22,80,success
+2026-03-09T03:16:22.425229,process_start,bob,DC-01,10.0.1.10,services.exe,notepad.exe,reg.exe query HKLM\Software,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,80,failure
+2026-03-09T03:17:22.425229,registry_change,charlie,HR-4401,192.168.1.20,winword.exe,reg.exe,powershell.exe Get-Process,charlie,,10.0.5.55,3389,success
+2026-03-09T03:18:22.425229,registry_change,charlie,WS-1002,10.0.0.22,cmd.exe,notepad.exe,reg.exe query HKLM\Software,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,445,failure
+2026-03-09T03:19:22.425229,registry_change,eve,WS-1001,10.0.5.55,excel.exe,reg.exe,wmic cpu get name,eve,,10.0.0.22,3389,success
+2026-03-09T03:22:22.425229,process_start,grace,WS-1003,192.168.1.20,outlook.exe,reg.exe,wmic cpu get name,grace,,192.168.1.20,139,success
+2026-03-09T03:22:22.425229,process_start,david,WS-1002,10.0.0.15,outlook.exe,rundll32.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,3389,failure
+2026-03-09T03:23:22.425229,process_start,david,HR-4401,10.0.0.15,winword.exe,wmic.exe,wmic cpu get name,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,success
+2026-03-09T03:24:22.425229,process_start,alice,ENG-2201,10.0.0.22,excel.exe,notepad.exe,powershell.exe Get-Process,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,success
+2026-03-09T03:27:22.425229,network_connection,david,WS-1001,10.0.0.22,winword.exe,rundll32.exe,notepad.exe notes.txt,frank,,10.0.0.15,80,failure
+2026-03-09T03:30:22.425229,auth_success,bob,WS-1003,10.0.5.55,excel.exe,notepad.exe,cmd.exe /c dir,alice,,192.168.1.20,445,success
+2026-03-09T03:32:22.425229,registry_change,frank,ENG-2201,192.168.1.20,excel.exe,reg.exe,reg.exe query HKLM\Software,david,,10.0.0.22,443,success
+2026-03-09T03:34:22.425229,auth_failure,frank,WS-1003,10.0.0.22,outlook.exe,reg.exe,powershell.exe Get-Process,eve,,10.0.1.10,3389,failure
+2026-03-09T03:35:22.425229,network_connection,eve,WS-1002,10.0.5.55,outlook.exe,powershell.exe,cmd.exe /c dir,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,failure
+2026-03-09T03:36:22.425229,registry_change,alice,WS-1002,10.0.5.55,winword.exe,wmic.exe,notepad.exe notes.txt,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,failure
+2026-03-09T03:37:22.425229,process_start,frank,ENG-2201,10.0.5.55,winword.exe,rundll32.exe,notepad.exe notes.txt,charlie,,10.0.0.22,135,failure
+2026-03-09T03:39:22.425229,process_start,david,HR-4401,10.0.0.15,services.exe,notepad.exe,wmic cpu get name,grace,,10.0.0.15,139,failure
+2026-03-09T03:40:22.425229,auth_failure,david,WS-1001,10.0.1.10,services.exe,cmd.exe,reg.exe query HKLM\Software,bob,,10.0.0.22,3389,success
+2026-03-09T03:42:22.425229,auth_success,eve,WS-1002,10.0.0.15,explorer.exe,reg.exe,powershell.exe Get-Process,frank,,10.0.0.15,445,failure
+2026-03-09T03:43:22.425229,auth_success,alice,WS-1002,10.0.0.22,excel.exe,rundll32.exe,wmic cpu get name,david,,10.0.0.22,80,success
+2026-03-09T03:43:22.425229,process_start,bob,ENG-2201,10.0.0.15,excel.exe,reg.exe,notepad.exe notes.txt,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,80,failure
+2026-03-09T03:44:22.425229,auth_success,eve,WS-1002,192.168.1.20,cmd.exe,reg.exe,notepad.exe notes.txt,alice,,192.168.1.20,80,failure
+2026-03-09T03:45:22.425229,process_start,david,HR-4401,10.0.0.15,excel.exe,cmd.exe,wmic process call create powershell.exe,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,success
+2026-03-09T03:45:22.425229,process_start,grace,WS-1001,10.0.0.22,services.exe,reg.exe,powershell.exe Get-Process,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,3389,failure
+2026-03-09T03:48:22.425229,auth_success,david,WS-1002,10.0.5.55,excel.exe,cmd.exe,cmd.exe /c dir,alice,,10.0.1.10,3389,success
+2026-03-09T03:55:22.425229,process_start,bob,DC-01,10.0.5.55,cmd.exe,rundll32.exe,cmd.exe /c dir,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,success
+2026-03-09T03:55:22.425229,process_start,david,ENG-2201,10.0.0.22,excel.exe,wmic.exe,cmd.exe /c dir,alice,,10.0.0.15,3389,success
+2026-03-09T03:58:22.425229,process_start,david,WS-1001,10.0.0.15,cmd.exe,reg.exe,powershell.exe Get-Process,alice,,192.168.1.20,443,failure
+2026-03-09T03:59:22.425229,process_start,david,DC-01,10.0.0.15,services.exe,wmic.exe,powershell.exe Get-Process,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,135,success
+2026-03-09T04:01:22.425229,process_start,alice,WS-1002,10.0.5.55,winword.exe,rundll32.exe,wmic cpu get name,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,3389,success
+2026-03-09T04:02:22.425229,process_start,grace,DC-01,10.0.5.55,explorer.exe,notepad.exe,notepad.exe notes.txt,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,failure
+2026-03-09T04:04:22.425229,process_start,bob,WS-1003,10.0.1.10,services.exe,rundll32.exe,cmd.exe /c dir,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,success
+2026-03-09T04:04:22.425229,registry_change,grace,WS-1002,10.0.5.55,winword.exe,wmic.exe,wmic cpu get name,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,success
+2026-03-09T04:05:22.425229,process_start,frank,HR-4401,10.0.0.22,winword.exe,rundll32.exe,notepad.exe notes.txt,eve,,192.168.1.20,139,success
+2026-03-09T04:05:22.425229,network_connection,grace,WS-1002,10.0.1.10,outlook.exe,rundll32.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,bob,,10.0.0.22,80,failure
+2026-03-09T04:07:22.425229,network_connection,charlie,DC-01,10.0.0.22,explorer.exe,reg.exe,cmd.exe /c dir,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,3389,failure
+2026-03-09T04:07:22.425229,registry_change,david,HR-4401,192.168.1.20,outlook.exe,rundll32.exe,wmic cpu get name,grace,,10.0.1.10,139,success
+2026-03-09T04:09:22.425229,auth_failure,david,WS-1002,10.0.5.55,outlook.exe,wmic.exe,cmd.exe /c dir,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,failure
+2026-03-09T04:10:22.425229,auth_failure,eve,ENG-2201,10.0.1.10,outlook.exe,rundll32.exe,reg.exe query HKLM\Software,alice,,192.168.1.20,445,success
+2026-03-09T04:11:22.425229,network_connection,charlie,WS-1001,10.0.5.55,explorer.exe,notepad.exe,wmic cpu get name,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,135,success
+2026-03-09T04:13:22.425229,auth_success,grace,HR-4401,10.0.5.55,outlook.exe,rundll32.exe,powershell.exe Get-Process,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,failure
+2026-03-09T04:13:22.425229,auth_failure,david,WS-1002,10.0.5.55,explorer.exe,rundll32.exe,reg.exe query HKLM\Software,alice,,10.0.0.22,135,success
+2026-03-09T04:15:22.425229,auth_failure,alice,HR-4401,10.0.5.55,winword.exe,rundll32.exe,wmic cpu get name,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,success
+2026-03-09T04:17:22.425229,process_start,bob,ENG-2201,10.0.0.22,services.exe,rundll32.exe,cmd.exe /c dir,bob,,192.168.1.20,3389,success
+2026-03-09T04:19:22.425229,auth_failure,bob,DC-01,10.0.1.10,cmd.exe,reg.exe,notepad.exe notes.txt,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,80,failure
+2026-03-09T04:19:22.425229,registry_change,frank,WS-1002,192.168.1.20,winword.exe,reg.exe,notepad.exe notes.txt,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,443,failure
+2026-03-09T04:20:22.425229,process_start,alice,WS-1001,10.0.0.22,excel.exe,powershell.exe,cmd.exe /c dir,david,,10.0.0.22,3389,success
+2026-03-09T04:21:22.425229,auth_failure,alice,WS-1001,10.0.0.15,outlook.exe,rundll32.exe,cmd.exe /c dir,eve,,10.0.5.55,139,failure
+2026-03-09T04:23:22.425229,process_start,alice,WS-1002,10.0.1.10,outlook.exe,cmd.exe,cmd.exe /c dir,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,135,failure
+2026-03-09T04:23:22.425229,auth_failure,frank,HR-4401,10.0.0.22,excel.exe,cmd.exe,notepad.exe notes.txt,frank,,192.168.1.20,3389,failure
+2026-03-09T04:24:22.425229,auth_failure,frank,ENG-2201,10.0.5.55,outlook.exe,wmic.exe,powershell.exe Get-Process,bob,,10.0.1.10,135,failure
+2026-03-09T04:26:22.425229,auth_success,alice,HR-4401,192.168.1.20,excel.exe,rundll32.exe,reg.exe query HKLM\Software,eve,,10.0.0.15,139,failure
+2026-03-09T04:28:22.425229,process_start,david,WS-1001,192.168.1.20,winword.exe,wmic.exe,wmic cpu get name,bob,,10.0.0.22,443,success
+2026-03-09T04:31:22.425229,process_start,eve,WS-1002,10.0.0.15,outlook.exe,reg.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,david,,10.0.0.15,443,failure
+2026-03-09T04:32:22.425229,auth_success,alice,WS-1002,192.168.1.20,winword.exe,powershell.exe,notepad.exe notes.txt,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,443,failure
+2026-03-09T04:33:22.425229,auth_success,frank,DC-01,10.0.0.15,winword.exe,rundll32.exe,powershell.exe Get-Process,frank,,192.168.1.20,443,success
+2026-03-09T04:33:22.425229,network_connection,bob,WS-1002,192.168.1.20,outlook.exe,rundll32.exe,wmic cpu get name,grace,,10.0.0.22,3389,success
+2026-03-09T04:34:22.425229,auth_failure,alice,WS-1001,192.168.1.20,explorer.exe,reg.exe,reg.exe query HKLM\Software,charlie,,10.0.1.10,80,success
+2026-03-09T04:34:22.425229,registry_change,bob,WS-1003,10.0.1.10,cmd.exe,wmic.exe,cmd.exe /c dir,charlie,,10.0.0.15,135,failure
+2026-03-09T04:35:22.425229,network_connection,grace,DC-01,10.0.5.55,winword.exe,powershell.exe,notepad.exe notes.txt,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,success
+2026-03-09T04:37:22.425229,auth_failure,grace,HR-4401,10.0.0.15,cmd.exe,reg.exe,cmd.exe /c dir,eve,,10.0.0.22,443,success
+2026-03-09T04:37:22.425229,process_start,bob,WS-1001,10.0.0.15,winword.exe,reg.exe,cmd.exe /c dir,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,failure
+2026-03-09T04:38:22.425229,auth_failure,charlie,WS-1002,10.0.5.55,explorer.exe,cmd.exe,notepad.exe notes.txt,bob,,192.168.1.20,445,success
+2026-03-09T04:39:22.425229,registry_change,grace,WS-1002,10.0.1.10,winword.exe,cmd.exe,notepad.exe notes.txt,alice,,192.168.1.20,135,failure
+2026-03-09T04:41:22.425229,auth_failure,david,WS-1001,192.168.1.20,cmd.exe,wmic.exe,cmd.exe /c whoami && net user,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,success
+2026-03-09T04:41:22.425229,auth_failure,bob,HR-4401,10.0.0.22,cmd.exe,powershell.exe,wmic cpu get name,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,443,success
+2026-03-09T04:45:22.425229,auth_failure,bob,WS-1002,192.168.1.20,explorer.exe,rundll32.exe,wmic cpu get name,david,,10.0.5.55,80,failure
+2026-03-09T04:45:22.425229,auth_failure,frank,WS-1003,10.0.5.55,outlook.exe,notepad.exe,cmd.exe /c dir,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,445,success
+2026-03-09T04:46:22.425229,process_start,alice,WS-1002,10.0.0.15,outlook.exe,notepad.exe,notepad.exe notes.txt,frank,,10.0.0.22,443,success
+2026-03-09T04:46:22.425229,process_start,eve,DC-01,10.0.5.55,winword.exe,notepad.exe,reg.exe query HKLM\Software,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,3389,success
+2026-03-09T04:47:22.425229,auth_success,eve,ENG-2201,10.0.1.10,explorer.exe,cmd.exe,wmic cpu get name,eve,,10.0.0.15,443,success
+2026-03-09T04:47:22.425229,process_start,david,DC-01,192.168.1.20,cmd.exe,cmd.exe,wmic cpu get name,grace,,10.0.0.22,139,success
+2026-03-09T04:49:22.425229,auth_success,grace,DC-01,10.0.0.22,excel.exe,reg.exe,cmd.exe /c dir,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,failure
+2026-03-09T04:53:22.425229,process_start,eve,ENG-2201,10.0.1.10,outlook.exe,powershell.exe,cmd.exe /c dir,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,failure
+2026-03-09T04:53:22.425229,auth_success,alice,WS-1001,10.0.0.22,services.exe,wmic.exe,notepad.exe notes.txt,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,80,failure
+2026-03-09T04:55:22.425229,process_start,charlie,ENG-2201,10.0.0.15,winword.exe,powershell.exe,notepad.exe notes.txt,david,,10.0.0.22,445,failure
+2026-03-09T04:57:22.425229,auth_failure,alice,ENG-2201,10.0.5.55,cmd.exe,cmd.exe,reg.exe query HKLM\Software,frank,,10.0.5.55,139,failure
+2026-03-09T04:59:22.425229,auth_success,frank,WS-1003,10.0.0.22,cmd.exe,wmic.exe,powershell.exe Get-Process,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,135,failure
+2026-03-09T05:00:22.425229,network_connection,alice,WS-1001,10.0.0.15,excel.exe,wmic.exe,reg.exe query HKLM\Software,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,445,success
+2026-03-09T05:03:22.425229,auth_success,frank,WS-1002,10.0.5.55,winword.exe,rundll32.exe,reg.exe query HKLM\Software,david,,10.0.0.22,139,failure
+2026-03-09T05:04:22.425229,auth_failure,grace,HR-4401,10.0.0.22,services.exe,powershell.exe,cmd.exe /c dir,frank,,10.0.1.10,3389,failure
+2026-03-09T05:07:22.425229,network_connection,alice,WS-1001,10.0.5.55,cmd.exe,cmd.exe,notepad.exe notes.txt,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,failure
+2026-03-09T05:07:22.425229,registry_change,eve,HR-4401,10.0.0.15,explorer.exe,notepad.exe,notepad.exe notes.txt,bob,,10.0.0.22,80,success
+2026-03-09T05:08:22.425229,process_start,frank,WS-1001,192.168.1.20,excel.exe,reg.exe,cmd.exe /c dir,bob,,10.0.0.15,139,success
+2026-03-09T05:10:22.425229,process_start,frank,DC-01,10.0.5.55,winword.exe,notepad.exe,reg.exe query HKLM\Software,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,443,failure
+2026-03-09T05:10:22.425229,auth_failure,eve,WS-1002,10.0.0.22,services.exe,rundll32.exe,cmd.exe /c dir,bob,,10.0.5.55,443,success
+2026-03-09T05:11:22.425229,registry_change,charlie,WS-1001,10.0.0.22,services.exe,wmic.exe,cmd.exe /c dir,david,,10.0.1.10,445,success
+2026-03-09T05:12:22.425229,auth_failure,grace,WS-1003,10.0.0.15,services.exe,cmd.exe,notepad.exe notes.txt,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,failure
+2026-03-09T05:13:22.425229,network_connection,bob,WS-1003,192.168.1.20,services.exe,powershell.exe,wmic cpu get name,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,443,failure
+2026-03-09T05:19:22.425229,auth_failure,eve,WS-1001,10.0.0.22,services.exe,reg.exe,powershell.exe -EncodedCommand SQBFAFgA,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,3389,success
+2026-03-09T05:19:22.425229,process_start,eve,WS-1003,10.0.5.55,services.exe,reg.exe,cmd.exe /c dir,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,3389,success
+2026-03-09T05:20:22.425229,auth_success,grace,WS-1001,10.0.1.10,explorer.exe,rundll32.exe,wmic cpu get name,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,failure
+2026-03-09T05:22:22.425229,auth_failure,alice,HR-4401,10.0.5.55,services.exe,cmd.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,alice,,10.0.0.22,443,failure
+2026-03-09T05:23:22.425229,process_start,grace,HR-4401,10.0.0.15,winword.exe,wmic.exe,notepad.exe notes.txt,frank,,10.0.1.10,445,failure
+2026-03-09T05:24:22.425229,auth_failure,frank,HR-4401,10.0.5.55,explorer.exe,wmic.exe,powershell.exe -EncodedCommand SQBFAFgA,charlie,,10.0.5.55,445,success
+2026-03-09T05:25:22.425229,registry_change,david,WS-1003,10.0.0.22,outlook.exe,powershell.exe,wmic cpu get name,david,,10.0.0.15,139,failure
+2026-03-09T05:31:22.425229,process_start,david,WS-1001,192.168.1.20,excel.exe,powershell.exe,cmd.exe /c dir,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,3389,success
+2026-03-09T05:31:22.425229,auth_success,eve,DC-01,10.0.0.22,outlook.exe,reg.exe,powershell.exe Get-Process,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,success
+2026-03-09T05:35:22.425229,auth_success,frank,WS-1002,10.0.1.10,winword.exe,cmd.exe,reg.exe query HKLM\Software,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,445,success
+2026-03-09T05:37:22.425229,network_connection,grace,WS-1002,192.168.1.20,winword.exe,powershell.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,80,failure
+2026-03-09T05:37:22.425229,process_start,charlie,HR-4401,10.0.0.22,services.exe,notepad.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,alice,,10.0.5.55,139,success
+2026-03-09T05:40:22.425229,auth_failure,frank,DC-01,10.0.1.10,winword.exe,powershell.exe,notepad.exe notes.txt,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,success
+2026-03-09T05:40:22.425229,process_start,bob,HR-4401,192.168.1.20,services.exe,powershell.exe,notepad.exe notes.txt,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,80,success
+2026-03-09T05:42:22.425229,process_start,eve,ENG-2201,10.0.1.10,explorer.exe,cmd.exe,notepad.exe notes.txt,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,success
+2026-03-09T05:46:22.425229,process_start,bob,HR-4401,10.0.0.22,explorer.exe,rundll32.exe,reg.exe query HKLM\Software,charlie,,10.0.1.10,3389,success
+2026-03-09T05:49:22.425229,process_start,bob,ENG-2201,10.0.1.10,excel.exe,reg.exe,notepad.exe notes.txt,alice,,10.0.0.22,3389,failure
+2026-03-09T05:50:22.425229,auth_failure,eve,ENG-2201,10.0.0.22,excel.exe,powershell.exe,powershell.exe Get-Process,frank,,10.0.0.15,139,failure
+2026-03-09T05:51:22.425229,auth_failure,charlie,WS-1003,10.0.1.10,excel.exe,powershell.exe,notepad.exe notes.txt,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,80,failure
+2026-03-09T05:51:22.425229,process_start,eve,ENG-2201,192.168.1.20,winword.exe,rundll32.exe,wmic cpu get name,david,,10.0.5.55,139,failure
+2026-03-09T05:53:22.425229,network_connection,eve,WS-1001,10.0.1.10,explorer.exe,rundll32.exe,cmd.exe /c dir,eve,,192.168.1.20,443,failure
+2026-03-09T05:55:22.425229,auth_failure,grace,HR-4401,10.0.1.10,services.exe,reg.exe,reg.exe query HKLM\Software,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,445,success
+2026-03-09T05:59:22.425229,process_start,frank,HR-4401,192.168.1.20,explorer.exe,wmic.exe,wmic cpu get name,alice,,10.0.0.15,139,success
+2026-03-09T06:01:22.425229,network_connection,david,ENG-2201,192.168.1.20,cmd.exe,wmic.exe,cmd.exe /c dir,alice,,10.0.1.10,135,success
+2026-03-09T06:02:22.425229,auth_success,bob,WS-1003,10.0.1.10,explorer.exe,wmic.exe,notepad.exe notes.txt,grace,,10.0.0.15,443,failure
+2026-03-09T06:03:22.425229,process_start,eve,WS-1001,192.168.1.20,winword.exe,reg.exe,notepad.exe notes.txt,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,failure
+2026-03-09T06:03:22.425229,process_start,david,WS-1002,10.0.5.55,explorer.exe,notepad.exe,notepad.exe notes.txt,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,failure
+2026-03-09T06:05:22.425229,process_start,eve,ENG-2201,10.0.5.55,cmd.exe,reg.exe,wmic cpu get name,frank,,192.168.1.20,135,failure
+2026-03-09T06:07:22.425229,process_start,david,WS-1003,10.0.5.55,winword.exe,notepad.exe,wmic cpu get name,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,139,success
+2026-03-09T06:09:22.425229,auth_failure,alice,HR-4401,192.168.1.20,outlook.exe,notepad.exe,reg.exe query HKLM\Software,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,135,success
+2026-03-09T06:09:22.425229,process_start,david,WS-1001,10.0.1.10,outlook.exe,notepad.exe,wmic cpu get name,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,failure
+2026-03-09T06:11:22.425229,process_start,frank,DC-01,10.0.0.15,outlook.exe,cmd.exe,powershell.exe Get-Process,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,445,success
+2026-03-09T06:13:22.425229,process_start,frank,WS-1001,10.0.0.22,outlook.exe,cmd.exe,notepad.exe notes.txt,charlie,,10.0.1.10,445,success
+2026-03-09T06:14:22.425229,auth_failure,charlie,WS-1002,10.0.0.22,cmd.exe,wmic.exe,cmd.exe /c dir,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,135,success
+2026-03-09T06:15:22.425229,process_start,frank,WS-1001,10.0.5.55,cmd.exe,reg.exe,powershell.exe Get-Process,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,failure
+2026-03-09T06:16:22.425229,process_start,david,WS-1002,10.0.0.22,explorer.exe,powershell.exe,powershell.exe Get-Process,grace,,10.0.0.22,135,success
+2026-03-09T06:17:22.425229,process_start,david,WS-1001,10.0.5.55,services.exe,powershell.exe,cmd.exe /c dir,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,success
+2026-03-09T06:23:22.425229,auth_failure,frank,WS-1001,10.0.5.55,services.exe,wmic.exe,reg.exe query HKLM\Software,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,3389,success
+2026-03-09T06:23:22.425229,registry_change,frank,WS-1001,10.0.1.10,cmd.exe,cmd.exe,cmd.exe /c dir,charlie,,192.168.1.20,3389,failure
+2026-03-09T06:26:22.425229,process_start,alice,WS-1002,10.0.1.10,excel.exe,wmic.exe,cmd.exe /c dir,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,443,success
+2026-03-09T06:28:22.425229,process_start,frank,WS-1003,10.0.1.10,outlook.exe,notepad.exe,wmic process call create powershell.exe,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,443,success
+2026-03-09T06:28:22.425229,auth_failure,david,DC-01,10.0.5.55,winword.exe,wmic.exe,wmic process call create powershell.exe,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,success
+2026-03-09T06:35:22.425229,process_start,charlie,WS-1003,10.0.0.15,excel.exe,powershell.exe,notepad.exe notes.txt,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,80,success
+2026-03-09T06:58:22.425229,registry_change,frank,WS-1002,10.0.0.15,explorer.exe,wmic.exe,wmic process call create powershell.exe,david,,10.0.5.55,445,failure
+2026-03-09T07:01:22.425229,registry_change,grace,WS-1003,10.0.0.15,outlook.exe,reg.exe,notepad.exe notes.txt,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,failure
+2026-03-09T07:16:22.425229,network_connection,bob,DC-01,192.168.1.20,cmd.exe,wmic.exe,notepad.exe notes.txt,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,success
+2026-03-09T07:19:22.425229,process_start,frank,WS-1001,10.0.0.15,excel.exe,cmd.exe,powershell.exe Get-Process,alice,,10.0.5.55,139,failure
+2026-03-09T07:19:22.425229,process_start,eve,ENG-2201,10.0.0.22,excel.exe,wmic.exe,powershell.exe Get-Process,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,80,success
+2026-03-09T07:23:22.425229,process_start,david,ENG-2201,10.0.0.22,explorer.exe,notepad.exe,cmd.exe /c dir,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,success
+2026-03-09T07:25:22.425229,auth_failure,eve,HR-4401,10.0.5.55,outlook.exe,powershell.exe,reg.exe query HKLM\Software,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,445,failure
+2026-03-09T07:37:22.425229,auth_failure,alice,WS-1003,10.0.1.10,services.exe,cmd.exe,wmic cpu get name,alice,,192.168.1.20,445,success
+2026-03-09T07:49:22.425229,registry_change,alice,HR-4401,10.0.0.15,cmd.exe,powershell.exe,wmic cpu get name,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,failure
+2026-03-09T07:49:22.425229,process_start,bob,ENG-2201,10.0.1.10,explorer.exe,rundll32.exe,wmic cpu get name,alice,,10.0.0.15,139,success
+2026-03-09T07:52:22.425229,process_start,frank,WS-1003,10.0.5.55,winword.exe,wmic.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,success
+2026-03-09T07:55:22.425229,process_start,frank,WS-1002,10.0.1.10,explorer.exe,powershell.exe,notepad.exe notes.txt,alice,,10.0.0.22,139,failure
+2026-03-09T07:57:22.425229,auth_failure,eve,DC-01,10.0.0.15,services.exe,reg.exe,notepad.exe notes.txt,grace,,10.0.5.55,135,success
+2026-03-09T08:05:22.425229,process_start,david,DC-01,10.0.5.55,explorer.exe,notepad.exe,notepad.exe notes.txt,bob,,10.0.0.22,139,failure
+2026-03-09T08:21:22.425229,process_start,eve,WS-1001,10.0.5.55,explorer.exe,wmic.exe,reg.exe query HKLM\Software,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,445,failure
+2026-03-09T08:23:22.425229,process_start,frank,WS-1003,192.168.1.20,winword.exe,wmic.exe,wmic cpu get name,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,failure
+2026-03-09T08:25:22.425229,process_start,david,WS-1002,192.168.1.20,outlook.exe,rundll32.exe,notepad.exe notes.txt,bob,,192.168.1.20,135,success
+2026-03-09T08:25:22.425229,auth_success,charlie,WS-1001,10.0.0.15,explorer.exe,cmd.exe,powershell.exe Get-Process,charlie,,10.0.5.55,443,success
+2026-03-09T08:27:22.425229,auth_failure,eve,ENG-2201,10.0.1.10,cmd.exe,notepad.exe,wmic cpu get name,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,success
+2026-03-09T08:31:22.425229,auth_failure,eve,WS-1003,192.168.1.20,explorer.exe,wmic.exe,powershell.exe Get-Process,eve,,10.0.0.15,135,failure
+2026-03-09T08:33:22.425229,auth_success,charlie,HR-4401,10.0.1.10,excel.exe,reg.exe,powershell.exe Get-Process,alice,,10.0.5.55,445,failure
+2026-03-09T08:34:22.425229,process_start,eve,DC-01,10.0.0.22,cmd.exe,powershell.exe,reg.exe query HKLM\Software,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,135,failure
+2026-03-09T08:35:22.425229,auth_failure,david,HR-4401,10.0.1.10,outlook.exe,notepad.exe,reg.exe query HKLM\Software,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,success
+2026-03-09T08:41:22.425229,process_start,david,ENG-2201,10.0.0.15,winword.exe,cmd.exe,cmd.exe /c dir,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,failure
+2026-03-09T08:43:22.425229,process_start,alice,ENG-2201,10.0.5.55,services.exe,rundll32.exe,notepad.exe notes.txt,eve,,192.168.1.20,3389,failure
+2026-03-09T08:46:22.425229,network_connection,alice,WS-1001,10.0.1.10,outlook.exe,reg.exe,powershell.exe -EncodedCommand SQBFAFgA,eve,,192.168.1.20,139,failure
+2026-03-09T08:47:22.425229,network_connection,eve,WS-1002,10.0.0.15,cmd.exe,notepad.exe,reg.exe query HKLM\Software,frank,,10.0.5.55,139,failure
+2026-03-09T08:58:22.425229,process_start,alice,WS-1001,10.0.0.22,excel.exe,notepad.exe,cmd.exe /c dir,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,failure
+2026-03-09T09:01:22.425229,process_start,frank,WS-1001,10.0.5.55,winword.exe,cmd.exe,wmic cpu get name,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,80,success
+2026-03-09T09:05:22.425229,process_start,charlie,WS-1001,10.0.0.22,cmd.exe,wmic.exe,wmic cpu get name,charlie,,10.0.0.15,80,failure
+2026-03-09T09:16:22.425229,auth_success,grace,WS-1001,10.0.0.15,services.exe,powershell.exe,powershell.exe Get-Process,grace,,10.0.0.22,135,success
+2026-03-09T09:19:22.425229,network_connection,frank,WS-1003,10.0.5.55,excel.exe,reg.exe,powershell.exe Get-Process,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,failure
+2026-03-09T09:21:22.425229,process_start,david,HR-4401,10.0.5.55,excel.exe,powershell.exe,cmd.exe /c dir,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,success
+2026-03-09T09:22:22.425229,auth_success,frank,DC-01,10.0.5.55,cmd.exe,wmic.exe,notepad.exe notes.txt,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,3389,success
+2026-03-09T09:25:22.425229,network_connection,alice,ENG-2201,10.0.0.15,excel.exe,powershell.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,eve,,10.0.0.22,3389,success
+2026-03-09T09:34:22.425229,process_start,bob,WS-1002,192.168.1.20,services.exe,notepad.exe,powershell.exe Get-Process,frank,,10.0.5.55,443,success
+2026-03-09T09:35:22.425229,auth_failure,alice,WS-1002,10.0.0.15,excel.exe,rundll32.exe,wmic cpu get name,bob,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,failure
+2026-03-09T09:37:22.425229,process_start,alice,WS-1003,10.0.0.22,cmd.exe,wmic.exe,powershell.exe Get-Process,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,139,failure
+2026-03-09T09:40:22.425229,registry_change,alice,HR-4401,10.0.1.10,outlook.exe,notepad.exe,reg.exe query HKLM\Software,alice,,10.0.0.22,135,failure
+2026-03-09T09:43:22.425229,process_start,frank,DC-01,10.0.1.10,winword.exe,rundll32.exe,cmd.exe /c dir,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,failure
+2026-03-09T09:46:22.425229,process_start,david,DC-01,10.0.0.22,cmd.exe,cmd.exe,reg.exe query HKLM\Software,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,success
+2026-03-09T09:47:22.425229,auth_failure,alice,DC-01,192.168.1.20,excel.exe,rundll32.exe,reg.exe query HKLM\Software,grace,,10.0.0.15,445,failure
+2026-03-09T09:51:22.425229,network_connection,david,DC-01,10.0.1.10,cmd.exe,reg.exe,wmic cpu get name,alice,,10.0.0.22,139,success
+2026-03-09T09:52:22.425229,process_start,bob,ENG-2201,10.0.0.22,excel.exe,powershell.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,445,failure
+2026-03-09T09:55:22.425229,process_start,frank,WS-1002,10.0.0.22,services.exe,cmd.exe,powershell.exe Get-Process,charlie,,10.0.5.55,443,success
+2026-03-09T09:57:22.425229,auth_failure,charlie,WS-1002,10.0.0.15,services.exe,cmd.exe,wmic cpu get name,eve,,10.0.1.10,135,failure
+2026-03-09T09:59:22.425229,process_start,david,WS-1001,10.0.0.22,excel.exe,cmd.exe,powershell.exe -nop -w hidden -enc SQBuAHYAbwBrAGUALQBtAGkAbQBpAGsAYQB0AHoA,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,success
+2026-03-09T10:01:22.425229,process_start,frank,HR-4401,10.0.1.10,excel.exe,cmd.exe,powershell.exe Get-Process,alice,,10.0.0.22,80,failure
+2026-03-09T10:04:22.425229,auth_failure,eve,WS-1002,10.0.0.22,winword.exe,notepad.exe,wmic process call create powershell.exe,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,80,failure
+2026-03-09T10:05:22.425229,network_connection,frank,DC-01,10.0.0.15,explorer.exe,cmd.exe,notepad.exe notes.txt,grace,,10.0.0.22,139,failure
+2026-03-09T10:07:22.425229,process_start,david,WS-1001,10.0.5.55,excel.exe,rundll32.exe,reg.exe query HKLM\Software,charlie,,10.0.0.22,135,failure
+2026-03-09T10:13:22.425229,auth_success,bob,ENG-2201,10.0.0.15,winword.exe,cmd.exe,cmd.exe /c dir,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,80,failure
+2026-03-09T10:17:22.425229,process_start,frank,ENG-2201,10.0.1.10,excel.exe,cmd.exe,cmd.exe /c dir,alice,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,3389,success
+2026-03-09T10:19:22.425229,process_start,charlie,HR-4401,10.0.0.22,excel.exe,wmic.exe,notepad.exe notes.txt,david,,10.0.0.22,443,success
+2026-03-09T10:22:22.425229,auth_failure,grace,DC-01,10.0.0.22,outlook.exe,cmd.exe,reg.exe query HKLM\Software,eve,,10.0.5.55,445,failure
+2026-03-09T10:25:22.425229,auth_failure,eve,DC-01,10.0.1.10,winword.exe,reg.exe,reg.exe query HKLM\Software,alice,,10.0.5.55,135,failure
+2026-03-09T10:28:22.425229,network_connection,david,DC-01,10.0.5.55,winword.exe,powershell.exe,reg.exe query HKLM\Software,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,success
+2026-03-09T10:29:22.425229,network_connection,eve,WS-1001,192.168.1.20,outlook.exe,rundll32.exe,wmic cpu get name,charlie,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,135,failure
+2026-03-09T10:31:22.425229,network_connection,bob,WS-1002,192.168.1.20,cmd.exe,reg.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,david,,10.0.5.55,80,success
+2026-03-09T10:31:22.425229,process_start,bob,WS-1003,10.0.0.22,cmd.exe,wmic.exe,notepad.exe notes.txt,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,3389,failure
+2026-03-09T10:37:22.425229,auth_failure,bob,DC-01,10.0.0.22,winword.exe,wmic.exe,reg.exe query HKLM\Software,grace,,10.0.1.10,139,failure
+2026-03-09T10:46:22.425229,auth_success,frank,DC-01,192.168.1.20,services.exe,cmd.exe,reg.exe query HKLM\Software,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,445,success
+2026-03-09T10:49:22.425229,process_start,eve,WS-1002,10.0.1.10,cmd.exe,notepad.exe,cmd.exe /c dir,david,,192.168.1.20,139,success
+2026-03-09T11:03:22.425229,process_start,bob,ENG-2201,10.0.0.15,outlook.exe,cmd.exe,powershell.exe Get-Process,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,139,success
+2026-03-09T11:04:22.425229,process_start,grace,DC-01,10.0.1.10,explorer.exe,powershell.exe,reg.exe query HKLM\Software,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,3389,success
+2026-03-09T11:05:22.425229,network_connection,frank,ENG-2201,10.0.5.55,services.exe,notepad.exe,wmic cpu get name,frank,,10.0.0.22,80,failure
+2026-03-09T11:07:22.425229,process_start,bob,HR-4401,192.168.1.20,services.exe,notepad.exe,powershell.exe Get-Process,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,success
+2026-03-09T11:07:22.425229,process_start,frank,WS-1003,10.0.0.15,outlook.exe,reg.exe,notepad.exe notes.txt,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,3389,failure
+2026-03-09T11:09:22.425229,process_start,bob,WS-1003,10.0.0.22,explorer.exe,notepad.exe,wmic cpu get name,eve,,10.0.0.15,135,success
+2026-03-09T11:11:22.425229,registry_change,eve,WS-1001,10.0.0.22,outlook.exe,wmic.exe,wmic cpu get name,frank,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,139,failure
+2026-03-09T11:13:22.425229,auth_failure,eve,ENG-2201,10.0.0.15,outlook.exe,rundll32.exe,reg.exe query HKLM\Software,grace,,192.168.1.20,443,success
+2026-03-09T11:17:22.425229,auth_failure,david,WS-1003,192.168.1.20,cmd.exe,cmd.exe,reg.exe query HKLM\Software,david,,10.0.0.15,443,success
+2026-03-09T11:23:22.425229,process_start,grace,WS-1003,10.0.1.10,winword.exe,reg.exe,powershell.exe Get-Process,charlie,,10.0.5.55,443,success
+2026-03-09T11:28:22.425229,process_start,eve,WS-1001,10.0.1.10,winword.exe,wmic.exe,cmd.exe /c dir,frank,,10.0.1.10,443,failure
+2026-03-09T11:29:22.425229,auth_failure,bob,DC-01,10.0.0.22,winword.exe,powershell.exe,notepad.exe notes.txt,eve,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,success
+2026-03-09T11:31:22.425229,auth_failure,grace,WS-1002,10.0.0.22,explorer.exe,cmd.exe,cmd.exe /c dir,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,success
+2026-03-09T11:34:22.425229,auth_failure,alice,WS-1003,192.168.1.20,cmd.exe,wmic.exe,powershell.exe Get-Process,bob,,10.0.0.22,80,success
+2026-03-09T11:40:22.425229,auth_success,charlie,ENG-2201,10.0.0.15,services.exe,wmic.exe,powershell.exe Get-Process,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,139,failure
+2026-03-09T11:43:22.425229,process_start,eve,WS-1003,10.0.1.10,excel.exe,reg.exe,cmd.exe /c whoami && net user,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,success
+2026-03-09T12:10:22.425229,auth_success,charlie,DC-01,192.168.1.20,explorer.exe,cmd.exe,powershell.exe Get-Process,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,failure
+2026-03-09T12:13:22.425229,process_start,grace,WS-1002,10.0.0.15,excel.exe,rundll32.exe,powershell.exe Get-Process,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,445,failure
+2026-03-09T12:31:22.442130,auth_failure,alice,WS-1002,10.9.9.9,,,,alice,,,,failure
+2026-03-09T12:31:42.442130,auth_failure,bob,WS-1002,10.9.9.9,,,,bob,,,,failure
+2026-03-09T12:32:02.442130,auth_failure,charlie,WS-1002,10.9.9.9,,,,charlie,,,,failure
+2026-03-09T12:32:22.442130,auth_failure,david,WS-1002,10.9.9.9,,,,david,,,,failure
+2026-03-09T12:32:42.442130,auth_failure,eve,WS-1002,10.9.9.9,,,,eve,,,,failure
+2026-03-09T12:33:02.442130,auth_failure,frank,WS-1002,10.9.9.9,,,,frank,,,,failure
+2026-03-09T12:33:22.442130,auth_failure,grace,WS-1002,10.9.9.9,,,,grace,,,,failure
+2026-03-09T12:40:22.425229,network_connection,eve,WS-1002,10.0.1.10,services.exe,cmd.exe,wmic process call create powershell.exe,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,445,success
+2026-03-09T12:43:22.425229,auth_success,grace,WS-1002,10.0.0.22,services.exe,reg.exe,cmd.exe /c dir,grace,,10.0.0.22,443,success
+2026-03-09T12:46:22.425229,process_start,alice,ENG-2201,10.0.0.22,outlook.exe,notepad.exe,powershell.exe Get-Process,bob,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,443,success
+2026-03-09T12:49:22.425229,process_start,frank,WS-1002,10.0.5.55,explorer.exe,reg.exe,powershell.exe Get-Process,grace,,10.0.0.15,80,success
+2026-03-09T12:55:22.425229,process_start,charlie,ENG-2201,192.168.1.20,outlook.exe,powershell.exe,reg.exe query HKLM\Software,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,443,success
+2026-03-09T13:01:22.425229,auth_failure,grace,DC-01,192.168.1.20,explorer.exe,reg.exe,powershell.exe Get-Process,charlie,,10.0.1.10,135,failure
+2026-03-09T13:19:22.425229,process_start,frank,WS-1001,10.0.0.22,explorer.exe,notepad.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,bob,,10.0.1.10,80,failure
+2026-03-09T13:22:22.425229,process_start,alice,WS-1003,10.0.5.55,outlook.exe,wmic.exe,reg.exe query HKLM\Software,alice,,10.0.0.22,445,failure
+2026-03-09T13:25:22.425229,auth_failure,frank,WS-1001,192.168.1.20,services.exe,reg.exe,reg.exe query HKLM\Software,grace,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,139,failure
+2026-03-09T13:28:22.425229,auth_failure,grace,ENG-2201,192.168.1.20,excel.exe,wmic.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,alice,,10.0.1.10,445,success
+2026-03-09T13:34:22.425229,process_start,frank,WS-1003,10.0.5.55,outlook.exe,rundll32.exe,powershell.exe Get-Process,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,135,failure
+2026-03-09T13:46:22.425229,process_start,alice,HR-4401,10.0.1.10,winword.exe,wmic.exe,wmic cpu get name,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,443,success
+2026-03-09T13:52:22.425229,auth_failure,grace,WS-1001,10.0.0.15,winword.exe,notepad.exe,reg.exe query HKLM\Software,david,,10.0.0.22,80,success
+2026-03-09T14:19:22.425229,process_start,grace,WS-1001,10.0.0.15,outlook.exe,rundll32.exe,reg.exe add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d malware.exe,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,139,success
+2026-03-09T14:46:22.425229,auth_failure,david,HR-4401,10.0.5.55,winword.exe,powershell.exe,reg.exe query HKLM\Software,frank,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,10.0.5.55,135,success
+2026-03-09T14:49:22.425229,auth_failure,alice,HR-4401,10.0.0.22,explorer.exe,powershell.exe,reg.exe query HKLM\Software,grace,,10.0.0.22,139,success
+2026-03-09T14:52:22.425229,auth_success,david,WS-1003,10.0.1.10,winword.exe,notepad.exe,cmd.exe /c dir,david,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.1.10,443,failure
+2026-03-09T15:16:22.425229,auth_success,david,WS-1002,10.0.5.55,cmd.exe,powershell.exe,powershell.exe Get-Process,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,3389,success
+2026-03-09T15:19:22.425229,auth_failure,alice,WS-1002,10.0.0.15,excel.exe,wmic.exe,reg.exe query HKLM\Software,david,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,failure
+2026-03-09T15:22:22.425229,process_start,grace,WS-1002,10.0.0.22,cmd.exe,cmd.exe,notepad.exe notes.txt,alice,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,139,success
+2026-03-09T15:31:22.425229,network_connection,bob,DC-01,10.0.0.22,winword.exe,notepad.exe,reg.exe query HKLM\Software,eve,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.15,80,failure
+2026-03-09T15:34:22.425229,network_connection,charlie,WS-1003,10.0.0.22,winword.exe,powershell.exe,powershell.exe Get-Process,grace,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,192.168.1.20,139,failure
+2026-03-09T15:37:22.425229,auth_success,charlie,ENG-2201,10.0.5.55,winword.exe,cmd.exe,notepad.exe notes.txt,david,,10.0.5.55,445,success
+2026-03-09T15:43:22.425229,auth_failure,frank,WS-1001,10.0.0.15,explorer.exe,wmic.exe,cmd.exe /c dir,alice,,192.168.1.20,445,failure
+2026-03-09T16:13:22.425229,process_start,david,HR-4401,10.0.5.55,explorer.exe,cmd.exe,cmd.exe /c dir,charlie,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,10.0.0.22,135,success
+2026-03-09T16:25:22.425229,process_start,bob,ENG-2201,10.0.5.55,winword.exe,cmd.exe,notepad.exe notes.txt,bob,,192.168.1.20,445,failure

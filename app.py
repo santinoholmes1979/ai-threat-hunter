@@ -3,6 +3,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import pandas as pd
 import streamlit as st
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -100,8 +101,11 @@ with left:
             "user",
             "reason",
         ]
+
         display_columns = [col for col in preferred_columns if col in alerts_df.columns]
+
         st.dataframe(alerts_df[display_columns], use_container_width=True)
+
         st.subheader("Alert Investigation")
 
         selected_alert = st.selectbox(
@@ -112,6 +116,43 @@ with left:
         alert_details = alerts_df.loc[selected_alert]
 
         st.json(alert_details.to_dict())
+
+        st.subheader("Host Event Timeline")
+
+        selected_host_value = alert_details.get("host", "")
+
+        if selected_host_value and selected_host_value != "multiple":
+            host_events = norm_df[norm_df["host"] == selected_host_value].copy()
+
+            if not host_events.empty:
+                if "timestamp" in host_events.columns:
+                    host_events["timestamp"] = pd.to_datetime(host_events["timestamp"], errors="coerce")
+                    host_events = host_events.sort_values("timestamp", ascending=False)
+
+                timeline_columns = [
+                    "timestamp",
+                    "event_type",
+                    "host",
+                    "user",
+                    "process_name",
+                    "parent_process",
+                    "command_line",
+                    "source_ip",
+                    "status",
+                ]
+
+                available_timeline_columns = [
+                    col for col in timeline_columns if col in host_events.columns
+                ]
+
+                st.dataframe(
+                    host_events[available_timeline_columns].head(25),
+                    use_container_width=True
+                )
+            else:
+                st.info("No timeline events found for the selected host.")
+        else:
+            st.info("Timeline unavailable for aggregated alerts like password spray.")
 
 with right:
     st.subheader("AI Analyst Summary")
