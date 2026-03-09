@@ -8,13 +8,19 @@ def detect_suspicious_powershell(df: pd.DataFrame) -> pd.DataFrame:
         (df["process_name"].str.contains("powershell", na=False)) |
         (df["command_line"].str.contains("powershell", case=False, na=False))
     ) & (
-        df["command_line"].str.contains("encodedcommand|-enc|-nop|hidden|frombase64string|bypass", case=False, na=False)
+        df["command_line"].str.contains(
+            "encodedcommand|-enc|-nop|hidden|frombase64string|bypass",
+            case=False,
+            na=False
+        )
     )
 
     alerts = df[mask].copy()
     alerts["rule_name"] = "SuspiciousPowerShell"
     alerts["severity"] = "high"
     alerts["confidence"] = 85
+    alerts["mitre_technique"] = "T1059.001"
+    alerts["mitre_tactic"] = "Execution"
     alerts["reason"] = "PowerShell execution includes encoded, hidden, or defense-evasion style arguments."
     return alerts
 
@@ -30,6 +36,8 @@ def detect_runkey_persistence(df: pd.DataFrame) -> pd.DataFrame:
     alerts["rule_name"] = "RunKeyPersistence"
     alerts["severity"] = "high"
     alerts["confidence"] = 90
+    alerts["mitre_technique"] = "T1547.001"
+    alerts["mitre_tactic"] = "Persistence"
     alerts["reason"] = "Registry Run key modification may indicate persistence."
     return alerts
 
@@ -45,6 +53,8 @@ def detect_office_spawned_shell(df: pd.DataFrame) -> pd.DataFrame:
     alerts["rule_name"] = "OfficeSpawnedShell"
     alerts["severity"] = "high"
     alerts["confidence"] = 88
+    alerts["mitre_technique"] = "T1204"
+    alerts["mitre_tactic"] = "Execution"
     alerts["reason"] = "Office application spawned a shell or PowerShell process."
     return alerts
 
@@ -85,6 +95,8 @@ def detect_password_spray(df: pd.DataFrame) -> pd.DataFrame:
     alerts["rule_name"] = "PasswordSpray"
     alerts["severity"] = "critical"
     alerts["confidence"] = 92
+    alerts["mitre_technique"] = "T1110.003"
+    alerts["mitre_tactic"] = "Credential Access"
     alerts["reason"] = "Multiple failed logons from one source against many accounts."
     return alerts
 

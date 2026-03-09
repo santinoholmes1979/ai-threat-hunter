@@ -71,7 +71,20 @@ with left:
     if alerts_df.empty:
         st.info("No alerts yet. Run the pipeline.")
     else:
-        st.dataframe(alerts_df, use_container_width=True)
+        preferred_columns = [
+            "timestamp",
+            "rule_name",
+            "severity",
+            "confidence",
+            "mitre_tactic",
+            "mitre_technique",
+            "host",
+            "source_ip",
+            "user",
+            "reason",
+        ]
+        display_columns = [col for col in preferred_columns if col in alerts_df.columns]
+        st.dataframe(alerts_df[display_columns], use_container_width=True)
 
 with right:
     st.subheader("AI Analyst Summary")
